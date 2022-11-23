@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Майя Иванова](https://up.htmlacademy.ru/adaptive/27/user/2037583).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
