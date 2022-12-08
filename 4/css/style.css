@@ -49,7 +49,7 @@ img {
 .page__body {
   min-height: 100%;
   margin: 0;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 @media (min-width: 1200px) {
   .page__body {
@@ -151,17 +151,17 @@ img {
   display: block;
   margin: 0 auto;
 }
-.advanges__wrapper {
+.advantages__wrapper {
   text-transform: uppercase;
 }
-.advanges__header {
+.advantages__header {
   text-align: center;
 }
-.advanges__slogan {
+.advantages__slogan {
   font-weight: 700;
   font-size: 18px;
 }
-.advanges__intro {
+.advantages__intro {
   color: #333333;
 }
 .advantages__list {
@@ -352,27 +352,18 @@ img {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 768px) {
-  .catalog-card {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.catalog__title {
+  font-size: 21px;
+  text-align: center;
 }
-@media (min-width: 1200px) {
-  .catalog-card {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.catalog__description {
+  font-size: 18px;
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .catalog-card__first-card {
-    flex-basis: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .catalog-card__first-card {
-    flex-basis: 100%;
-  }
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 @media (min-width: 768px) {
   .catalog-container {
@@ -386,25 +377,34 @@ img {
     display: flex;
   }
 }
-.catalog__title {
-  font-size: 21px;
-  text-align: center;
+.catalog-card__container {
+  line-height: 21px;
 }
-.catalog__description {
-  font-size: 18px;
-  text-align: center;
+@media (min-width: 768px) {
+  .catalog-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-card__first-card {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-card__first-card {
+    flex-basis: 100%;
+  }
 }
 .catalog-card__image {
   display: block;
   margin: 0 auto;
-}
-.catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.catalog-card__container {
-  line-height: 21px;
 }
 .catalog-card__author {
   text-transform: none;
