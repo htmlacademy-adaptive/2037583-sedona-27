@@ -3,164 +3,170 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="rewiew-header heder">
-    <a class="rewiew-header__logo">
-      <img class="rewiew-header__logo-image" src="images/logotype.svg" width="185" height="196"
-        alt="City of Sedona.">
-    </a>
-    <nav class="rewiew-nav">
-      <button class="rewiew-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="rewiew-nav__wrapper">
-        <ul class="rewiew-nav__list">
-          <li class="rewiew-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="rewiew-nav__item">
-            <a href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="rewiew-nav__item rewiew-nav__item--active">
-            <a>
-              Форма отзыва
-            </a>
-          </li>
-          <li class="rewiew-nav__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="main-container">
-    <div class="rewiew-hero">
-      <img class="rewiew-hero__text-img" src="images/sedona.svg" width="229" height="39"
-        alt="Welcome to Sedona.">
-    </div>
-    <section class="rewiew">
-      <h1 class="rewiew__title">Оставьте свой отзыв</h1>
-      <p class="rewiew__description">
-        Помогите нашим отелям стать лучше!<br>
-        оставьте отзыв о них, а также о<br>
-        посещенных вами достопримечательностях
-      </p>
-      <form class="rewiew__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="rewiew__group rewiew__group--presentation">
-          <legend class="rewiew__title rewiew__presentation">Представьтесь:</legend>
-          <label class="rewiew__initials">Имя*:
-            <input class="rewiew__input" type="text" value="Пётр" required>
-          </label>
-          <label class="rewiew__initials">Фамилия*:
-            <input class="rewiew__input" type="text" value="Пустота" required>
-          </label>
-          <label class="rewiew__initials">Отчество:
-            <input class="rewiew__input" type="text" value="Викторович">
-          </label>
-        </fieldset>
-        <fieldset class="rewiew__group rewiew__group--contacts">
-          <legend class="rewiew__title">Контактная информация:</legend>
-          <label class="rewiew__contacts">Контактный телефон*:
-            <input class="rewiew__input" type="tel" placeholder="Введите телефон" required>
-          </label>
-          <label class="rewiew__contacts">Электронная почта*:
-            <input class="rewiew__input" type="email" placeholder="Введите e-mail" required>
-          </label>
-        </fieldset>
-        <fieldset class="rewiew__group">
-          <legend class="rewiew__title">Ваше общее впечатление:</legend>
-          <ul class="rewiew__list">
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="radio" name="impression" value="positive" checked>
-                <span class="rewiew-control__label">Скорее положительное</span>
-              </label>
+  <div class="body-container">
+    <header class="rewiew-header heder">
+      <a class="rewiew-header__logo" href="index.html">
+        <img class="rewiew-header__logo-image" src="images/logotype.svg" width="185" height="196" alt="City of Sedona.">
+      </a>
+      <nav class="rewiew-nav">
+        <button class="rewiew-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="rewiew-nav__wrapper">
+          <ul class="rewiew-nav__list">
+            <li class="rewiew-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
             </li>
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="radio" name="impression" value="negative">
-                <span class="rewiew-control__label">Скорее отрицательное</span>
-              </label>
+            <li class="rewiew-nav__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
             </li>
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="radio" name="impression" value="neutral">
-                <span class="rewiew-control__label">Затрудняюсь ответить</span>
-              </label>
+            <li class="rewiew-nav__item rewiew-nav__item--active">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="rewiew-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="rewiew__group">
-          <legend class="rewiew__title">Посещенные достопримечательности:</legend>
-          <ul class="rewiew__list">
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="checkbox" name="Мост Дьявола" checked>
-                <span class="rewiew-control__label">Мост Дьявола</span>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="rewiew-hero">
+        <img class="rewiew-hero__text-img" src="images/sedona.svg" width="229" height="39" alt="Welcome to Sedona.">
+      </div>
+      <section class="rewiew">
+        <h1 class="rewiew__title">Оставьте свой отзыв</h1>
+        <p class="rewiew__description">
+          Помогите нашим отелям стать лучше!
+          оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+        <form class="rewiew__form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="rewiew__container">
+            <fieldset class="rewiew__group rewiew__group--presentation">
+              <legend class="rewiew__title rewiew__presentation">Представьтесь:</legend>
+              <label class="rewiew__initials">Имя*:
+                <input class="rewiew__input" type="text" value="Пётр" required>
               </label>
+              <label class="rewiew__initials">Фамилия*:
+                <input class="rewiew__input" type="text" value="Пустота" required>
+              </label>
+              <label class="rewiew__initials">Отчество:
+                <input class="rewiew__input" type="text" value="Викторович">
+              </label>
+            </fieldset>
+            <fieldset class="rewiew__group rewiew__group--contacts">
+              <legend class="rewiew__title">Контактная информация:</legend>
+              <label class="rewiew__contacts">Контактный телефон*:
+                <input class="rewiew__input" type="tel" placeholder="Введите телефон" required>
+              </label>
+              <label class="rewiew__contacts">Электронная почта*:
+                <input class="rewiew__input" type="email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="rewiew__group">
+            <legend class="rewiew__title">Ваше общее впечатление:</legend>
+            <ul class="rewiew__list">
+              <li class="rewiew__item">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="radio" name="impression" value="positive" checked>
+                  <span class="rewiew-control__label rewiew-control__label--impression">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="rewiew__item">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="radio" name="impression" value="negative">
+                  <span class="rewiew-control__label rewiew-control__label--impression">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="rewiew__item">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="radio" name="impression" value="neutral">
+                  <span class="rewiew-control__label rewiew-control__label--impression">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="rewiew__group">
+            <legend class="rewiew__title">Посещенные достопримечательности:</legend>
+            <ul class="rewiew__list">
+              <li class="rewiew__item rewiew__item--attraction">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="checkbox" name="Мост Дьявола" checked>
+                  <span class="rewiew-control__label rewiew-control__label--attraction">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="rewiew__item rewiew__item--attraction">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="checkbox" name="Гора-Колокол" checked>
+                  <span class="rewiew-control__label rewiew-control__label--attraction">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="rewiew__item rewiew__item--attraction">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="checkbox" name="Слайд-парк" checked>
+                  <span class="rewiew-control__label rewiew-control__label--attraction">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="rewiew__item rewiew__item--attraction">
+                <label class="rewiew-control">
+                  <input class="rewiew-control__input" type="checkbox" name="Красные скалы">
+                  <span class="rewiew-control__label rewiew-control__label--attraction">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="rewiew__group rewiew__group--text">
+            <legend class="rewiew__title">Опишите свои эмоции:</legend>
+            <textarea class="rewiew__text" name="rewiew-text"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <div class="rewiew-button__container">
+          <button class="rewiew__button button" type="submit">Отправить отзыв</button>
+          <span class="rewiew__remark">* — обязательные поля</span>
+        </div>
+        </form>
+      </section>
+    </main>
+    <footer class="rewiew-footer">
+      <div class="rewiew-footer__wrapper">
+        <div class="rewiew-footer__social social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Седона в Вконтакте</a>
             </li>
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="checkbox" name="Гора-Колокол" checked>
-                <span class="rewiew-control__label">Гора-Колокол</span>
-              </label>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Седона в Телеграме</a>
             </li>
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="checkbox" name="Слайд-парк" checked>
-                <span class="rewiew-control__label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="rewiew__item">
-              <label class="rewiew-control">
-                <input class="rewiew-control__input" type="checkbox" name="Красные скалы">
-                <span class="rewiew-control__label">Красные скалы</span>
-              </label>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Седона в
+                Ютубе</a>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="rewiew__group">
-          <legend class="rewiew__title">Опишите свои эмоции:</legend>
-          <textarea class="rewiew__text" name="rewiew-text" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-        <button class="rewiew__button button" type="submit">Отправить отзыв</button>
-        <span class="rewiew__remark">* — обязательные поля</span>
-      </form>
-    </section>
-  </main>
-  <footer class="rewiew-footer">
-    <div class="rewiew-footer__wrapper">
-      <div class="rewiew-footer__social social">
-        <b class="social__title">#visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Седона в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Седона в Телеграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Седона в
-              Ютубе</a>
-          </li>
-        </ul>
+        </div>
+        <div class="rewiew-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
-      <div class="rewiew-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

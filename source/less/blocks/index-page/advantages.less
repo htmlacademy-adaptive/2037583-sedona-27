@@ -1,20 +1,25 @@
-.advanges__wrapper {
+.advantages__wrapper {
   text-transform: uppercase;
 }
 
-.advanges__slogan {
+.advantages__header {
+  text-align: center;
+}
+
+.advantages__slogan {
   font-weight: 700;
   font-size: 18px;
 }
 
-.advanges__intro {
-  color: #333333;
+.advantages__intro {
+  color: @brown-text;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
 
   &--sedona-city {
     margin: 0;
@@ -23,29 +28,105 @@
   }
 }
 
+.advantages__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
 .advantages__item {
   &--grey-background {
-    background-color: #eeeeee;
+    background-color: @grey-background;
+  }
+}
+
+.advantages__item--town {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.advantages__list--sedona-city {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .advantages__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
 .advantages__description {
-  color: #333333;
+  color: @brown-text;
+  margin: 0;
 
   &--blue-background {
-    color: #ffffff;
+    color: @white-color;
+  }
+}
+
+.advantages__photo {
+  vertical-align: middle;
+}
+
+.advantages__photo--bridge {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -1;
   }
 }
 
 .advantages__container {
   &--blue-background {
-    color: #ffffff;
-    background-color: #81b3d2;
+    color: @white-color;
+    background-color: @blue-background;
+  }
+}
+
+.advantages__container--blue-background {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
   }
 }

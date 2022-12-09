@@ -1,6 +1,7 @@
 .catalog-nav {
   font-weight: 700;
   line-height: 21px;
+  text-align: end;
 }
 
 .catalog-nav__list {
@@ -9,8 +10,27 @@
   list-style-type: none;
 }
 
+@media (min-width: @tablet-width) {
+  .catalog-nav__wrapper {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-nav__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .catalog-nav__item--active {
   a {
-    color: #766357;
+    color: @link-active-color;
   }
 }

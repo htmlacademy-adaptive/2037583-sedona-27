@@ -11,12 +11,14 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "postcss-less": "^6.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint-fix": "stylelint \"source/less/**/*.less\" --customSyntax less --fix",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
@@ -39,5 +41,6 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {}
 }

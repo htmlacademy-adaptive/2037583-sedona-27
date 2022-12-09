@@ -1,6 +1,7 @@
 .main-nav {
   font-weight: 700;
   line-height: 21px;
+  text-align: end;
 }
 
 .main-nav__list {
@@ -9,9 +10,27 @@
   list-style-type: none;
 }
 
-.main-nav__item--active {
-  a {
-    color: #766357;
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__item--active {
+  a {
+    color: @link-active-color;
+  }
+}

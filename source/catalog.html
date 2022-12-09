@@ -3,146 +3,148 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="catalog-header heder">
-    <a class="catalog-header__logo">
-      <img class="catalog-header__logo-image" src="images/logotype.svg" width="185" height="196"
-        alt="City of Sedona.">
-    </a>
-    <nav class="catalog-nav">
-      <button class="catalog-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="catalog-nav__wrapper">
-        <ul class="catalog-nav__list">
-          <li class="catalog-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="catalog-nav__item catalog-nav__item--active">
-            <a>
-              Фото и видео
-            </a>
-          </li>
-          <li class="catalog-nav__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="catalog-nav__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="main-container">
-    <div class="catalog-hero">
-      <img class="catalog-hero__text-img" src="images/sedona.svg" width="229" height="39"
-        alt="Welcome to Sedona.">
-    </div>
-    <section class="catalog">
-      <h1 class="catalog__title">Фото и видео</h1>
-      <p class="catalog__description">
-        Не можете решиться на путешествие<br>
-        из-за курса? Фотографии помогут вам<br>
-        забыть о политике и экономике.
-      </p>
-      <div class="catalog-container">
-        <h2 class="visually-hidden">Фотографии города Седоны</h2>
-        <ul class="catalog__list">
-          <li class="catalog-card">
-            <div class="catalog-card__container">
-              <a class="catalog-card__ink" href="#">
-                <img class="catalog-card__image" width="280" height="280" src="images/catalog/landscape.jpg"
-                  alt="Пейзаж Седоны."></a>
-              <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title">Неродные просторы</h3>
+  <div class="body-container">
+    <header class="catalog-header heder">
+      <a class="catalog-header__logo" href="index.html">
+        <img class="catalog-header__logo-image" src="images/logotype.svg" width="185" height="196"
+          alt="City of Sedona.">
+      </a>
+      <nav class="catalog-nav">
+        <button class="catalog-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="catalog-nav__wrapper">
+          <ul class="catalog-nav__list">
+            <li class="catalog-nav__item">
+              <a href="index.html">
+                Главная
               </a>
-              <p class="catalog-card__author">Автор фото: Борис</p>
-              <span class="catalog-card__likes">1350</span>
-            </div>
-          </li>
-          <li class="catalog-card">
-            <div class="catalog-card__container">
-              <a class="catalog-card__link" href="#">
-                <img class="catalog-card__image" width="280" height="280" src="images/catalog/cactus.jpg"
-                  alt="Фотография кактуса в Седоне."></a>
-              <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title">Местная растительность</h3>
+            </li>
+            <li class="catalog-nav__item catalog-nav__item--active">
+              <a>
+                Фото и видео
               </a>
-              <p class="catalog-card__author">Автор фото: Сергей</p>
-              <span class="catalog-card__likes">143</span>
-            </div>
-          </li>
-          <li class="catalog-card">
-            <div class="catalog-card__container">
-              <a class="catalog-card__link" href="#">
-                <img class="catalog-card__image" width="280" height="280" src="images/catalog/nord-road.jpg"
-                  alt="Фотография дороги на север Седоны."></a>
-              <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title">Дорога на север</h3>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="form.html">
+                Форма отзыва
               </a>
-              <p class="catalog-card__author">Автор фото: Петр</p>
-              <span class="catalog-card__likes">96</span>
-            </div>
-          </li>
-          <li class="catalog-card">
-            <div class="catalog-card__container">
-              <a class="catalog-card__link" href="#">
-                <img class="catalog-card__image" width="280" height="280" src="images/catalog/devil-bridge.jpg"
-                  alt="Фотография моста Дьявола в Седоне."></a>
-              <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title">Мост дьявола</h3>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#">
+                HTML Academy
               </a>
-              <p class="catalog-card__author">Автор фото: Антон</p>
-              <span class="catalog-card__likes">254</span>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="catalog-hero">
+        <img class="catalog-hero__text-img" src="images/sedona.svg" width="229" height="39" alt="Welcome to Sedona.">
       </div>
-    </section>
-    <section class="catalog-video">
-      <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
-      <p class="catalog-video__description">
-        Смотрите видеопрезентацию и<br>
-        скорее за билетами, пока они не<br>
-        подорожали в очередной раз!
-      </p>
-      <img class="catalog-video__screenshot" width="280" height="177"
-        src="images/catalog/video-screenshot.jpg.jpg" alt="Скриншот видеопрезентации о Седоне.">
-    </section>
-  </main>
-  <footer class="catalog-footer">
-    <div class="catalog-footer__wrapper">
-      <div class="catalog-footer__social social">
-        <b class="social__title">#visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Седона в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Седона в Телеграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Седона в
-              Ютубе</a>
-          </li>
-        </ul>
+      <section class="catalog">
+        <h1 class="catalog__title">Фото и видео</h1>
+        <p class="catalog__description">
+          Не можете решиться на путешествие
+          из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.
+        </p>
+        <div class="catalog-container">
+          <h2 class="visually-hidden">Фотографии города Седоны</h2>
+          <ul class="catalog__list">
+            <li class="catalog-card catalog-card__first-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__ink" href="#">
+                  <img class="catalog-card__image" width="280" height="280" src="images/catalog/landscape.jpg"
+                    alt="Пейзаж Седоны."></a>
+                <a class="catalog-card__link" href="#">
+                  <h3 class="catalog-card__title">Неродные просторы</h3>
+                </a>
+                <p class="catalog-card__author">Автор фото: Борис</p>
+                <span class="catalog-card__likes">1350</span>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <img class="catalog-card__image" width="280" height="280" src="images/catalog/cactus.jpg"
+                    alt="Фотография кактуса в Седоне."></a>
+                <a class="catalog-card__link" href="#">
+                  <h3 class="catalog-card__title">Местная растительность</h3>
+                </a>
+                <p class="catalog-card__author">Автор фото: Сергей</p>
+                <span class="catalog-card__likes">143</span>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <img class="catalog-card__image" width="280" height="280" src="images/catalog/nord-road.jpg"
+                    alt="Фотография дороги на север Седоны."></a>
+                <a class="catalog-card__link" href="#">
+                  <h3 class="catalog-card__title">Дорога на север</h3>
+                </a>
+                <p class="catalog-card__author">Автор фото: Петр</p>
+                <span class="catalog-card__likes">96</span>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <img class="catalog-card__image" width="280" height="280" src="images/catalog/devil-bridge.jpg"
+                    alt="Фотография моста Дьявола в Седоне."></a>
+                <a class="catalog-card__link" href="#">
+                  <h3 class="catalog-card__title">Мост дьявола</h3>
+                </a>
+                <p class="catalog-card__author">Автор фото: Антон</p>
+                <span class="catalog-card__likes">254</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-video">
+        <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
+        <p class="catalog-video__description">
+          Смотрите видеопрезентацию и
+          скорее за билетами, пока они не
+          подорожали в очередной раз!
+        </p>
+        <img class="catalog-video__screenshot" width="280" height="177" src="images/catalog/video-screenshot.jpg.jpg"
+          alt="Скриншот видеопрезентации о Седоне.">
+      </section>
+    </main>
+    <footer class="catalog-footer">
+      <div class="catalog-footer__wrapper">
+        <div class="catalog-footer__social social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Седона в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Седона в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Седона в
+                Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
-      <div class="catalog-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
