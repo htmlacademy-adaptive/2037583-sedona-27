@@ -1,4 +1,4 @@
-.advantages__wrapper {
+.advantages__box {
   text-transform: uppercase;
 }
 
@@ -9,10 +9,15 @@
 .advantages__slogan {
   font-weight: 700;
   font-size: 18px;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 35px;
 }
 
 .advantages__intro {
   color: @brown-text;
+  margin: 0;
+  padding-bottom: 53px;
 }
 
 .advantages__list {
@@ -21,14 +26,6 @@
   list-style-type: none;
   text-align: center;
 
-  &--sedona-city {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-}
-
-.advantages__list {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -42,9 +39,46 @@
   }
 }
 
+.advantages__list--sedona-city {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 23px 18px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .advantages__item {
   &--grey-background {
     background-color: @grey-background;
+    position: relative;
+  }
+}
+
+.advantages__item--grey-background:not(:last-child){
+  :before {
+    content: "";
+    position: absolute;
+    width: 284px;
+    height: 1px;
+    left: 18px;
+    bottom: 0;
+    background-color: #D6D6D6;;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+     }
   }
 }
 
@@ -60,16 +94,26 @@
   }
 }
 
-.advantages__list--sedona-city {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
+.advantages__item--sedona-city {
+  display: grid;
+  grid-template-columns: 40px auto;
+  column-gap: 7px;
+  grid-template-rows: 40px min-content;
+  row-gap: 10px;
+  justify-items: start;
+  align-items: center;
+}
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-  }
+.advantages__item--food {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.advantages__title--sedona-city {
+  grid-column: 2 / 3;
+}
+
+.advantages__description--sedona-city {
+  grid-column: 2 / 3;
 }
 
 .advantages__title {
@@ -79,13 +123,26 @@
   line-height: 26px;
 }
 
+.advantages__title--blue-background {
+  padding-bottom: 11px;
+}
+
+.advantages__title--grey-background {
+  padding-bottom: 11px;
+}
+
 .advantages__description {
   color: @brown-text;
   margin: 0;
 
   &--blue-background {
     color: @white-color;
+    padding-top: 17px;
   }
+}
+
+.advantages__description--grey-background {
+  padding-top: 17px;
 }
 
 .advantages__photo {
@@ -120,6 +177,8 @@
 }
 
 .advantages__wrapper {
+  padding: 33px 18px 40px 18px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -130,3 +189,8 @@
     flex-direction: column;
   }
 }
+
+.advantages__item--grey-background .advantages__wrapper {
+  padding: 24px 26px;
+}
+
