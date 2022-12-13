@@ -7,4 +7,17 @@
   text-transform: uppercase;
   border: none;
   padding: 16px 49px;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @active-color;
+  }
+
+  &:disabled {
+    background-color: @disabled-color;
+  }
 }

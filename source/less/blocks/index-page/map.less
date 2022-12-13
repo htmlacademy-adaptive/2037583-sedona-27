@@ -1,3 +1,18 @@
-.map {
-  text-align: center;
+.map img {
+  vertical-align: middle;
+}
+
+.map__wrapper {
+  position: relative;
+}
+.map__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 165px;
+  left: 145px;
+  background-color: @map-pointer-color;
+  border-radius: 50%;
+  border: 5px solid @white-color;
 }

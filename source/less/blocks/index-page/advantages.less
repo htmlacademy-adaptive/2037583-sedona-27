@@ -66,19 +66,19 @@
   }
 }
 
-.advantages__item--grey-background:not(:last-child){
-  :before {
+.advantages__item--grey-background:not(:last-child) {
+  ::before {
     content: "";
     position: absolute;
     width: 284px;
     height: 1px;
     left: 18px;
     bottom: 0;
-    background-color: #D6D6D6;;
+    background-color: #d6d6d6;
 
     @media (min-width: @tablet-width) {
       display: none;
-     }
+    }
   }
 }
 
@@ -104,10 +104,47 @@
   align-items: center;
 }
 
+  .advantages__item--housing {
+    position: relative;
+    ::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 0;
+      left: 0;
+      background-image: url("../images/index/house-icon.svg");
+    }
+  }
+
 .advantages__item--food {
   padding-top: 25px;
   padding-bottom: 25px;
+  position: relative;
+  ::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 25px;
+    left: 0;
+    background-image: url("../images/index/burger-icon.svg");
+  }
 }
+
+.advantages__item--souvenirs {
+  position: relative;
+  ::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-image: url("../images/index/gift-icon.svg");
+  }
+}
+
 .advantages__title--sedona-city {
   grid-column: 2 / 3;
 }
@@ -163,16 +200,14 @@
   &--blue-background {
     color: @white-color;
     background-color: @blue-background;
-  }
-}
 
-.advantages__container--blue-background {
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
 
-  @media (min-width: @desktop-width) {
-    display: flex;
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
   }
 }
 
