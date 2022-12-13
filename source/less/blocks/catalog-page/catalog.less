@@ -1,7 +1,6 @@
 .catalog {
   text-transform: uppercase;
-  line-height: 26px;
-  padding: 24px 20px;
+  padding: 37px 20px 17px 20px;
 
   @media (min-width: @desktop-width) {
     padding: 24px 0;
@@ -9,6 +8,10 @@
 }
 
 .catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +29,5 @@
 }
 
 .catalog__description {
-  display: block;
-  font-size: 18px;
   text-align: center;
 }

@@ -1,10 +1,44 @@
 .catalog-video {
   text-transform: uppercase;
-  padding: 24px 20px;
+  padding: 0 20px;
   text-align: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 48px;
+    height: 54px;
+    top: 225px;
+    left: 140px;
+    background-image: url("../images/catalog/play-button.svg");
+  }
 }
 
 .catalog-video__title {
+  margin: 0;
   font-size: 18px;
   line-height: 26px;
+}
+
+.catalog-video__description {
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.catalog-video__screenshot {
+  vertical-align: middle;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 48px;
+    height: 54px;
+    top: 15px;
+    left: 50px;
+    background-image: url("../images/catalog/play-button.svg");
+  }
 }
