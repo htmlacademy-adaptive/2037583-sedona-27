@@ -1,5 +1,5 @@
 .rewiew {
-  padding: 24px 20px;
+  padding: 36px 20px 24px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,8 @@
 }
 
 .rewiew__title {
+  margin: 0;
+  padding-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -21,11 +23,32 @@
   text-align: center;
 }
 
+.rewiew__presentation {
+  padding-bottom: 8px;
+}
+
 .rewiew__description {
+  margin: 0;
+  padding-bottom: 24px;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.rewiew__form {
+  padding-top: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 320px;
+    top: 0;
+    left: -20px;
+    background-color: @disabled-color;
+  }
 }
 
 .rewiew__initials {
@@ -46,9 +69,33 @@
   }
 }
 
+.rewiew__box {
+  padding-bottom: 39px;
+}
+
+.rewiew__box--contacts {
+  padding-top: 24px;
+  padding-bottom: 34px;
+}
+
+.rewiew__box--impression {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.rewiew__box--attraction {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.rewiew__box--text {
+  padding-top: 24px;
+  padding-bottom: 56px;
+}
+
 .rewiew__group {
   margin: 0;
-  padding: 16px 0;
+  padding: 16px 0 0 0;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -61,6 +108,21 @@
 }
 
 .rewiew__group--presentation {
+  display: grid;
+  grid-template-columns: 280px;
+  row-gap: 16px;
+  grid-template-rows: min-content min-content min-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 320px;
+   top: 382px;
+    left: -20px;
+    background-color: @disabled-color;
+  }
+
   @media (min-width: @tablet-width) {
     flex-direction: column;
     padding-right: 43px;
@@ -73,6 +135,21 @@
 }
 
 .rewiew__group--contacts {
+  display: grid;
+  grid-template-columns: 280px;
+  row-gap: 16px;
+  grid-template-rows: min-content min-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 320px;
+   top: 680px;
+    left: -20px;
+    background-color: @disabled-color;
+  }
+
   @media (min-width: @tablet-width) {
     lex-direction: column;
     padding-left: 43px;
@@ -81,6 +158,30 @@
   @media (min-width: @desktop-width) {
     flex-direction: column;
     padding-left: 63px;
+  }
+}
+
+.rewiew__group--impression {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 320px;
+    top: 964px;
+    left: -20px;
+    background-color: @disabled-color;
+  }
+}
+
+.rewiew__group--attraction {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 320px;
+    top: 1336px;
+    left: -20px;
+    background-color: @disabled-color;
   }
 }
 
@@ -98,7 +199,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 16px;
+  padding: 16px 25px 16px 16px;
   background-color: @body-background;
   border: none;
 }
@@ -108,12 +209,6 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
-}
-
-.rewiew-control__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
 }
 
 .rewiew__list {
@@ -132,16 +227,33 @@
   }
 }
 
+.rewiew__list--impression {
+  display: grid;
+  grid-template-columns: 280px;
+  row-gap: 16px;
+  grid-template-rows: min-content min-content;
+}
+
+.rewiew__list--attraction {
+  display: grid;
+  grid-template-columns: 280px;
+  row-gap: 16px;
+  grid-template-rows: min-content min-content min-content min-content;
+}
+
 .rewiew__text {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
   background-color: @body-background;
   padding: 16px;
   border: none;
   min-width: 247px;
   min-height: 118px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 648px;
@@ -155,6 +267,7 @@
 }
 
 .rewiew__item {
+  padding: 10px 0 10px 0;
   @media (min-width: @tablet-width) {
     padding-right: 16px;
   }
@@ -172,6 +285,67 @@
   @media (min-width: @desktop-width) {
     padding-right: 64px;
   }
+}
+
+.rewiew-control {
+  position: relative;
+  display: block;
+}
+
+.rewiew-control__mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: @body-background;
+  border-radius: 4px;
+}
+
+.rewiew-control__input[type="radio"]+.rewiew-control__mark {
+  border-radius: 50%;
+}
+
+.rewiew-control__input[type="radio"]:checked+.rewiew-control__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: @brown-text;
+  border-radius: 50%;
+  content: "";
+}
+
+.rewiew-control__input[type="checkbox"]:checked+.rewiew-control__mark::before {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../images/catalog/check-mark.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.rewiew-control__input[type="checkbox"]+.rewiew-control__mark:hover {
+  background-color: @disabled-color;
+  cursor: pointer;
+}
+
+.rewiew-control__input[type="checkbox"]+.rewiew-control__mark:disabled {
+  background-color: @disabled-color-checkbox;
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.rewiew-control__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 62px;
 }
 
 .rewiew-control__label--impression {
