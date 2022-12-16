@@ -4,6 +4,8 @@
 
 .map__wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .map__wrapper::before {
   content: "";
@@ -15,4 +17,8 @@
   background-color: @map-pointer-color;
   border-radius: 50%;
   border: 5px solid @white-color;
+
+  @media (min-width: @tablet-width) {
+    left: 375px;
+  }
 }

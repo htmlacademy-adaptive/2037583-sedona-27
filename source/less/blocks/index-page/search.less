@@ -15,8 +15,17 @@
   padding-top: 32px;
   padding-bottom: 32px;
   color: @brown-text;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .search__button {
   padding: 16px 37px;
+  @media (min-width: @tablet-width) {
+    padding: 15px 121px 16px 121px;
   }
+}

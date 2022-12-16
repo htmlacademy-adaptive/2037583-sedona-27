@@ -4,6 +4,9 @@
 
 .advantages__header {
   text-align: center;
+  @media (min-width: @tablet-width) {
+    padding: 0 124px 0 124px;
+  }
 }
 
 .advantages__slogan {
@@ -12,12 +15,27 @@
   margin: 0;
   padding-top: 32px;
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages__intro {
   color: @brown-text;
   margin: 0;
   padding-bottom: 53px;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages__list {
@@ -27,9 +45,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,6 +66,7 @@
   text-align: start;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     display: flex;
     flex-direction: row;
   }
@@ -63,6 +81,7 @@
   &--grey-background {
     background-color: @grey-background;
     position: relative;
+    display: flex;
   }
 }
 
@@ -84,13 +103,13 @@
 
 .advantages__item--town {
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-column: 1 / 4;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-column: 1 / 4;
   }
 }
 
@@ -102,6 +121,17 @@
   row-gap: 10px;
   justify-items: start;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+
+    display: block;
+    text-align: center;
+    padding: 157px 33px 58px 33px;
+  }
+
 }
 
   .advantages__item--housing {
@@ -114,9 +144,13 @@
       top: 0;
       left: 0;
       background-image: url("../images/index/house-icon.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 100px;
+        left: 110px;
+      }
     }
   }
-
 .advantages__item--food {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -129,6 +163,10 @@
     top: 25px;
     left: 0;
     background-image: url("../images/index/burger-icon.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 158px 33px 60px 33px;
   }
 }
 
@@ -145,8 +183,24 @@
   }
 }
 
+.advantages__item--bridge {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-column: 1 / 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-column: 1 / 4;
+  }
+}
+
 .advantages__title--sedona-city {
   grid-column: 2 / 3;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .advantages__description--sedona-city {
@@ -171,6 +225,12 @@
 .advantages__description {
   color: @brown-text;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+  }
 
   &--blue-background {
     color: @white-color;
@@ -203,10 +263,12 @@
 
     @media (min-width: @tablet-width) {
       display: flex;
+      align-items: center;
     }
 
     @media (min-width: @desktop-width) {
       display: flex;
+      align-items: center;
     }
   }
 }
@@ -227,5 +289,13 @@
 
 .advantages__item--grey-background .advantages__wrapper {
   padding: 24px 26px;
+  @media (min-width: @tablet-width) {
+    padding: 52px 33px;
+  }
 }
 
+.advantages__item--grey-background:nth-child(2n) .advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px;
+  }
+}
