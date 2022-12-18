@@ -30,4 +30,10 @@
 
 .catalog__description {
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }

@@ -3,7 +3,9 @@
   padding-top: 39px;
 
   @media (min-width: @tablet-width) {
-  display: flex;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -11,6 +13,14 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 125px 0 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 254px 0 104px;
+  }
 }
 
 .social__list {
@@ -20,6 +30,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .social__item {

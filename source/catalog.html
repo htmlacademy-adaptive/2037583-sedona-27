@@ -52,30 +52,31 @@
       <section class="catalog">
         <h1 class="catalog__title">Фото и видео</h1>
         <p class="catalog__description">
-          Не можете решиться на путешествие
-          из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
+          Не можете решиться на путешествие из-за курса?<br>
+          Фотографии помогут вам забыть о политике и экономике.
         </p>
         <div class="catalog-container">
           <h2 class="visually-hidden">Фотографии города Седоны</h2>
           <ul class="catalog__list">
             <li class="catalog-card catalog-card__first-card">
-              <div class="catalog-card__container">
-                <a class="catalog-card__ink" href="#">
-                  <img class="catalog-card__image" width="280" height="280" src="images/catalog/landscape.jpg"
-                    alt="Пейзаж Седоны."></a>
-                <a class="catalog-card__link" href="#">
-                  <h3 class="catalog-card__title">Неродные просторы</h3>
+              <div class="catalog-card__container catalog-card__container--first-card">
+                <a class="catalog-card__link catalog-card__link--first-card" href="#">
+                  <img class="catalog-card__image catalog-card__image--first-card" width="280" height="280" src="images/catalog/landscape.jpg"
+                    alt="Пейзаж Седоны.">
                 </a>
-                <p class="catalog-card__author">Автор фото: Борис</p>
-                <span class="catalog-card__likes">1350</span>
+                <a class="catalog-card__link--title" href="#">
+                  <h3 class="catalog-card__title catalog-card__title--first-card">Неродные просторы</h3>
+                </a>
+                <p class="catalog-card__author catalog-card__author--first-card">Автор фото: Борис</p>
+                <span class="catalog-card__likes catalog-card__likes--first-card">1350</span>
               </div>
             </li>
             <li class="catalog-card">
               <div class="catalog-card__container">
                 <a class="catalog-card__link" href="#">
                   <img class="catalog-card__image" width="280" height="280" src="images/catalog/cactus.jpg"
-                    alt="Фотография кактуса в Седоне."></a>
+                    alt="Фотография кактуса в Седоне.">
+                </a>
                 <a class="catalog-card__link" href="#">
                   <h3 class="catalog-card__title">Местная растительность</h3>
                 </a>
@@ -84,10 +85,11 @@
               </div>
             </li>
             <li class="catalog-card">
-              <div class="catalog-card__container">
+              <div class="catalog-card__container catalog-card__container--north-road">
                 <a class="catalog-card__link" href="#">
                   <img class="catalog-card__image" width="280" height="280" src="images/catalog/nord-road.jpg"
-                    alt="Фотография дороги на север Седоны."></a>
+                    alt="Фотография дороги на север Седоны.">
+                  </a>
                 <a class="catalog-card__link" href="#">
                   <h3 class="catalog-card__title">Дорога на север</h3>
                 </a>
@@ -99,7 +101,8 @@
               <div class="catalog-card__container">
                 <a class="catalog-card__link" href="#">
                   <img class="catalog-card__image" width="280" height="280" src="images/catalog/devil-bridge.jpg"
-                    alt="Фотография моста Дьявола в Седоне."></a>
+                    alt="Фотография моста Дьявола в Седоне.">
+                  </a>
                 <a class="catalog-card__link" href="#">
                   <h3 class="catalog-card__title">Мост дьявола</h3>
                 </a>
@@ -113,9 +116,8 @@
       <section class="catalog-video">
         <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
         <p class="catalog-video__description">
-          Смотрите видеопрезентацию и<br>
-          скорее за билетами, пока они не<br>
-          подорожали в очередной раз!
+          Смотрите видеопрезентацию и скорее за билетами, пока они<br>
+          не подорожали в очередной раз!
         </p>
         <img class="catalog-video__screenshot" width="280" height="177" src="images/catalog/video-screenshot.jpg.jpg"
           alt="Скриншот видеопрезентации о Седоне.">
@@ -171,8 +173,8 @@
         <div class="catalog-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 60 60">
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <path fill="currentColor"
                 d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
             </svg>
