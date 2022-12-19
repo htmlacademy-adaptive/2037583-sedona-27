@@ -57,11 +57,43 @@
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
   }
+
+  @media (min-width: @desktop-width) {
+    color: @white-color;
+  }
 }
 
 .catalog-card__container--north-road {
   @media (min-width: @tablet-width) {
     background-color: @background-color-card-road;
+  }
+}
+
+.catalog-card__container--first-card-link {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-row: 3 / 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto 80px;
+    position: absolute;
+    color: @white-color;
+    bottom: 0;
+  }
+}
+
+.catalog-card__container--link {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+   position: absolute;
+   color: @white-color;
+   bottom: 0;
   }
 }
 
@@ -102,6 +134,10 @@
     padding-top: 22px;
     padding-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    color: @white-color;
+  }
 }
 .catalog-card__image {
   display: block;
@@ -113,6 +149,14 @@
   padding-bottom: 16px;
   text-transform: none;
   color: @brown-text;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white-color;
+  }
 }
 
 .catalog-card__author--first-card {
@@ -134,18 +178,36 @@
     left: 0;
     top: -6px;
     background-image: url("../images/catalog/like-icon.svg");
+    fill: currentColor;
+
+    @media (min-width: @tablet-width) {
+      top: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      opacity: 1;
+      fill: @white-color;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 32px;
   }
 }
 
 .catalog-card__likes--first-card {
   @media (min-width: @tablet-width) {
    grid-column: 2 / 3;
-   grid-row: 2 / 3;
+   grid-row: 1 / 2;
    display: flex;
    justify-content: end;
 
     &::before {
-     left: 220px;
+      left: 10px;
     }
   }
 }
