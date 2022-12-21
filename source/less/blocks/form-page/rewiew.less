@@ -73,7 +73,7 @@
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
-   display: grid;
+    display: grid;
   }
 }
 
@@ -83,7 +83,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-   }
+  }
 }
 
 .rewiew__contacts--tel {
@@ -115,6 +115,7 @@
     background-color: @background-color-contacts-icon;
   }
 }
+
 .rewiew__container {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -130,15 +131,15 @@
       background-color: @form-line-color;
     }
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
 
-    &::before {
-      left: 492px;
+      &::before {
+        left: 492px;
+      }
     }
   }
-}
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -198,7 +199,7 @@
     content: "";
     height: 1px;
     width: 320px;
-   top: 382px;
+    top: 382px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -266,7 +267,6 @@
 }
 
 .rewiew__group--impression .rewiew__title {
-
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
@@ -317,7 +317,6 @@
 }
 
 .rewiew__group--attraction .rewiew__title {
-
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
@@ -342,6 +341,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 327px 0 327px;
+
     &::before {
       top: 545px;
       width: 280px;
@@ -365,7 +365,6 @@
 }
 
 .rewiew__group--text .rewiew__title {
-
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
@@ -498,6 +497,7 @@
 
 .rewiew__item {
   padding: 10px 0 10px 0;
+
   @media (min-width: @tablet-width) {
     padding-right: 16px;
   }
@@ -534,11 +534,11 @@
   border-radius: 4px;
 }
 
-.rewiew-control__input[type="radio"]+.rewiew-control__mark {
+.rewiew-control__input[type="radio"] + .rewiew-control__mark {
   border-radius: 50%;
 }
 
-.rewiew-control__input[type="radio"]:checked+.rewiew-control__mark::before {
+.rewiew-control__input[type="radio"]:checked + .rewiew-control__mark::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -549,7 +549,7 @@
   content: "";
 }
 
-.rewiew-control__input[type="checkbox"]:checked+.rewiew-control__mark::before {
+.rewiew-control__input[type="checkbox"]:checked + .rewiew-control__mark::before {
   position: absolute;
   top: 14px;
   left: 12px;
@@ -560,12 +560,12 @@
   content: "";
 }
 
-.rewiew-control__input[type="checkbox"]+.rewiew-control__mark:hover {
+.rewiew-control__input[type="checkbox"] + .rewiew-control__mark:hover {
   background-color: @disabled-color;
   cursor: pointer;
 }
 
-.rewiew-control__input[type="checkbox"]+.rewiew-control__mark:disabled {
+.rewiew-control__input[type="checkbox"] + .rewiew-control__mark:disabled {
   background-color: @disabled-color-checkbox;
 
   &::before {
@@ -600,7 +600,7 @@
   }
 }
 
-.rewiew-button__container {
+.rewiew__container--button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;

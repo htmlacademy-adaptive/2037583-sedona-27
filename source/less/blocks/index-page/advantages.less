@@ -4,6 +4,7 @@
 
 .advantages__header {
   text-align: center;
+
   @media (min-width: @tablet-width) {
     padding: 0 124px 0 124px;
   }
@@ -61,7 +62,6 @@
 
 .advantages__list--sedona-city {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -134,30 +134,32 @@
     text-align: center;
     padding: 157px 33px 58px 33px;
   }
-
 }
 
-  .advantages__item--housing {
-    position: relative;
-    ::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      top: 0;
-      left: 0;
-      background-image: url("../images/index/house-icon.svg");
+.advantages__item--housing {
+  position: relative;
 
-      @media (min-width: @tablet-width) {
-        top: 100px;
-        left: 110px;
-      }
+  ::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-image: url("../images/index/house-icon.svg");
+
+    @media (min-width: @tablet-width) {
+      top: 100px;
+      left: 110px;
     }
   }
+}
+
 .advantages__item--food {
   padding-top: 25px;
   padding-bottom: 25px;
   position: relative;
+
   ::before {
     content: "";
     position: absolute;
@@ -175,6 +177,7 @@
 
 .advantages__item--souvenirs {
   position: relative;
+
   ::before {
     content: "";
     position: absolute;
@@ -292,6 +295,7 @@
 
 .advantages__item--grey-background .advantages__wrapper {
   padding: 24px 26px;
+
   @media (min-width: @tablet-width) {
     padding: 52px 33px;
   }
