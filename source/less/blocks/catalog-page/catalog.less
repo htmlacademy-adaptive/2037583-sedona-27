@@ -13,8 +13,8 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: @desktop-width) {

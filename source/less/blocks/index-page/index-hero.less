@@ -3,6 +3,15 @@
   background-color: @black-color;
   background-image: url("../images/index/index-hero-background.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/index/index-hero-background-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../images/index/index-hero-back-desktop.jpg");
+  }
 }
 
 .index-hero__text-img {

@@ -49,13 +49,17 @@
     background-color: @body-background;
     display: grid;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .catalog-card__container--first-card {
   @media (min-width: @tablet-width) {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: flex-end;
+    align-items: flex-end;*/
   }
 
   @media (min-width: @desktop-width) {
@@ -98,11 +102,6 @@
 }
 
 .catalog-card {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +110,8 @@
 
 .catalog-card--first-card {
   @media (min-width: @tablet-width) {
-    flex-basis: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -179,15 +179,15 @@
     left: 0;
     top: -6px;
     background-image: url("../images/catalog/like-icon.svg");
-    fill: currentColor;
+    opacity: 0.3;
 
     @media (min-width: @tablet-width) {
       top: 27px;
     }
 
     @media (min-width: @desktop-width) {
+      background-image: url("../images/catalog/desktop/like-icon-white.svg");
       opacity: 1;
-      fill: @white-color;
     }
   }
 
