@@ -12,6 +12,11 @@
   @media (min-width: @tablet-width) {
     background-image: url("../images/index/index-hero-back-desktop.jpg");
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../images/index/index-hero-back-desktop.jpg");
+    background-size: cover;
+  }
 }
 
 .index-hero__text-img {
@@ -19,4 +24,18 @@
   padding-bottom: 85px;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 350px;
+    width: auto;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 350px;
+    width: auto;
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
 }

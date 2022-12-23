@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: каталог</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/favicon-32x32-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="images/favicons/manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -97,7 +101,7 @@
               </div>
             </li>
             <li class="catalog-card">
-              <div class="catalog-card__container catalog-card__container--north-road">
+              <div class="catalog-card__container">
                 <a class="catalog-card__link" href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="images/catalog/desktop/nord-road-desktop.jpg">
@@ -106,7 +110,7 @@
                       alt="Фотография дороги на север Седоны.">
                   </picture>
                 </a>
-                <div class="catalog-card__container catalog-card__container--link">
+                <div class="catalog-card__container catalog-card__container--link catalog-card__container--north-road">
                   <a class="catalog-card__link" href="#">
                     <h3 class="catalog-card__title">Дорога на север</h3>
                   </a>
@@ -143,8 +147,12 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они<br>
           не подорожали в очередной раз!
         </p>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/catalog/desktop/video-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="images/catalog/tablet/video-screenshot-tablet.jpg">
         <img class="catalog-video__screenshot" width="280" height="177" src="images/catalog/video-screenshot.jpg"
           alt="Скриншот видеопрезентации о Седоне.">
+        </picture>
       </section>
     </main>
     <footer class="catalog-footer">
