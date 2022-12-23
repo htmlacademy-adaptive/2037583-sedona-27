@@ -2,8 +2,12 @@
   text-transform: uppercase;
   padding: 37px 20px 17px 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 66px 0;
+  }
+
   @media (min-width: @desktop-width) {
-    padding: 24px 0;
+    padding: 100px 0;
   }
 }
 
@@ -13,13 +17,13 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

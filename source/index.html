@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: главная страница</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/favicon-32x32-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="images/favicons/manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -47,8 +51,12 @@
     <main class="main-container">
       <section class="index-hero">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona!</h1>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/index/hero-text-desktop.svg">
+          <source media="(min-width: 768px)" srcset="images/index/hero-text-tablet.svg">
         <img class="index-hero__text-img" src="images/index/hero-text.svg" width="282" height="214"
           alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </picture>
       </section>
       <section class="advantages">
         <div class="advantages__box">
