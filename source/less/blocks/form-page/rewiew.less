@@ -408,6 +408,15 @@
   background-color: @body-background;
   border: none;
 
+  &:hover {
+    background-color: @disabled-color;
+  }
+
+  &:focus-visible {
+    background-color: @white-color;
+    outline: 4px solid #e5e5e5;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 1 / 2;
   }
