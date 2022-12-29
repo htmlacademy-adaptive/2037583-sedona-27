@@ -102,7 +102,7 @@ gulp.src([
 "source/fonts/*.{woff2,woff}",
 "source/images/**/*.ico",
 "source/images/**/*.svg",
-"source/images/**/*.webmanifest",
+"source/*.webmanifest",
 "!source/images/icons/*.svg",
 ], {
 base: "source"
