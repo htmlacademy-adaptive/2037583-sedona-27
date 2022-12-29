@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Седона: каталог</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="../images/favicons/favicon-32x32-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../images/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="../images/favicons/manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2037583-sedona-27/8/">
+</head>
+
+<body class="page__body">
+  <div class="body-container">
+    <header class="main-header heder">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="images/logotype.svg" width="185" height="196"
+          alt="City of Sedona.">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="catalog-hero">
+        <img class="catalog-hero__text-img" src="images/sedona.svg" width="229" height="39" alt="Welcome to Sedona.">
+      </div>
+      <section class="catalog">
+        <h1 class="catalog__title">Фото и видео</h1>
+        <p class="catalog__description">
+          Не можете решиться на путешествие из-за курса?<br>
+          Фотографии помогут вам забыть о политике и экономике.
+        </p>
+        <div class="catalog-container">
+          <h2 class="visually-hidden">Фотографии города Седоны</h2>
+          <ul class="catalog__list">
+            <li class="catalog-card catalog-card--first-card">
+              <div class="catalog-card__container catalog-card__container--first-card">
+                <a class="catalog-card__link catalog-card__link--first-card" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="../images/catalog/desktop/landscape-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="../images/catalog/tablet/landscape-tablet.webp">
+                    <source media="(min-width: 1200px)" srcset="images/catalog/desktop/landscape-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/catalog/tablet/landscape-tablet.jpg">
+                    <img class="catalog-card__image catalog-card__image--first-card" width="280" height="280"
+                      src="images/catalog/landscape.jpg" alt="Пейзаж Седоны.">
+                  </picture>
+                </a>
+                <div class="catalog-card__container catalog-card__container--first-card-link">
+                  <a class="catalog-card__link catalog-card__link--title" href="#">
+                    <h3 class="catalog-card__title catalog-card__title--first-card">Неродные просторы</h3>
+                  </a>
+                  <p class="catalog-card__author catalog-card__author--first-card">Автор фото: Борис</p>
+                  <span class="catalog-card__likes catalog-card__likes--first-card">1350</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/catalog/desktop/cactus-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/catalog/tablet/cactus-tablet.jpg">
+                    <img class="catalog-card__image" width="280" height="280" src="images/catalog/cactus.jpg"
+                      alt="Фотография кактуса в Седоне.">
+                  </picture>
+                </a>
+                <div class="catalog-card__container catalog-card__container--link">
+                  <a class="catalog-card__link" href="#">
+                    <h3 class="catalog-card__title">Местная растительность</h3>
+                  </a>
+                  <p class="catalog-card__author">Автор фото: Сергей</p>
+                  <span class="catalog-card__likes">143</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/catalog/desktop/nord-road-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/catalog/tablet/nord-road-tablet.jpg">
+                    <img class="catalog-card__image" width="280" height="280" src="images/catalog/nord-road.jpg"
+                      alt="Фотография дороги на север Седоны.">
+                  </picture>
+                </a>
+                <div class="catalog-card__container catalog-card__container--link catalog-card__container--north-road">
+                  <a class="catalog-card__link" href="#">
+                    <h3 class="catalog-card__title">Дорога на север</h3>
+                  </a>
+                  <p class="catalog-card__author">Автор фото: Петр</p>
+                  <span class="catalog-card__likes">96</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-card">
+              <div class="catalog-card__container">
+                <a class="catalog-card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/catalog/desktop/devil-bridge-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/catalog/tablet/devil-bridge-tablet.jpg">
+                    <img class="catalog-card__image" width="280" height="280" src="images/catalog/devil-bridge.jpg"
+                      alt="Фотография моста Дьявола в Седоне.">
+                  </picture>
+                </a>
+                <div class="catalog-card__container catalog-card__container--link">
+                  <a class="catalog-card__link" href="#">
+                    <h3 class="catalog-card__title">Мост дьявола</h3>
+                  </a>
+                  <p class="catalog-card__author">Автор фото: Антон</p>
+                  <span class="catalog-card__likes">254</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-video">
+        <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
+        <p class="catalog-video__description">
+          Смотрите видеопрезентацию и скорее за билетами, пока они<br>
+          не подорожали в очередной раз!
+        </p>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/catalog/desktop/video-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="images/catalog/tablet/video-screenshot-tablet.jpg">
+          <img class="catalog-video__screenshot" width="280" height="177" src="images/catalog/video-screenshot.jpg"
+            alt="Скриншот видеопрезентации о Седоне.">
+        </picture>
+      </section>
+    </main>
+    <footer class="catalog-footer">
+      <div class="catalog-footer__wrapper">
+        <div class="catalog-footer__social social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__icon social__icon--vkontakte" aria-hidden="true" focusable="false" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Седона в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social__icon social__icon--telegram" aria-hidden="true" focusable="false" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-telegram"></use>
+                </svg>
+                <span class="visually-hidden">Седона в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon social__icon--youtube" aria-hidden="true" focusable="false" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Седона в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34">
+              <use xlink:href="images/sprite.svg#icon-copyright"></use>
+            </svg>
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
