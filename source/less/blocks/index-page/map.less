@@ -1,29 +1,18 @@
-.map img {
-  vertical-align: middle;
-}
-
 .map__wrapper {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.map__wrapper::before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  top: 165px;
-  left: 145px;
-  background-color: @map-pointer-color;
-  border-radius: 50%;
-  border: 5px solid @white-color;
+.map__wrapper iframe {
+  border: none;
+  display: block;
 
   @media (min-width: @tablet-width) {
-    left: 375px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 545px;
+    width: 1200px;
   }
 }
