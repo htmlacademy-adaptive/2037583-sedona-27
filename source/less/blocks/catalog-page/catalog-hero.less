@@ -4,6 +4,22 @@
   background-image: url("../images/catalog-form-hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+
+  &::before {
+    content: url("../images/intro-triangle-mobile.svg");
+    position: absolute;
+    width: 1201px;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+
+    @media (min-width: @tablet-width) {
+      content: url("../images/intro-triangle-tablet.svg");
+      width: 1200px;
+      height: 57px;
+    }
+  }
 }
 
 .catalog-hero__text-img {

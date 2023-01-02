@@ -24,6 +24,8 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    padding-top: 49px;
+    padding-bottom: 30px;
 
     br {
       display: none;
@@ -262,6 +264,12 @@
 
 .advantages__title--blue-background {
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 }
 
 .advantages__title--grey-background {
@@ -281,6 +289,11 @@
   &--blue-background {
     color: @white-color;
     padding-top: 17px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
   }
 }
 
@@ -290,15 +303,15 @@
 
 .advantages__photo {
   vertical-align: middle;
-}
 
-.advantages__photo--bridge {
   @media (min-width: @tablet-width) {
-    order: -1;
+    width: 512px;
+    height: 256px;
   }
 
   @media (min-width: @desktop-width) {
-    order: -1;
+    width: 800px;
+    height: 256px;
   }
 }
 
@@ -320,19 +333,25 @@
 }
 
 .advantages__wrapper {
-  padding: 33px 18px 40px 18px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    max-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
   }
 }
 
+.advantages__item--bridge .advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 2;
+  }
+}
 .advantages__item--grey-background .advantages__wrapper {
   padding: 24px 26px;
 
