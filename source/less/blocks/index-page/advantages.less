@@ -16,6 +16,7 @@
 
 .advantages__slogan {
   font-weight: 700;
+  line-height: 26px;
   font-size: 18px;
   margin: 0;
   padding-top: 32px;
@@ -23,7 +24,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    line-height: 26px;
     padding-top: 49px;
     padding-bottom: 30px;
 
@@ -36,7 +36,19 @@
 .advantages__intro {
   color: @brown-text;
   margin: 0;
-  padding-bottom: 53px;
+  padding-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 320px;
+    height: 37px;
+    background-image: url("/images/index/triangle-mobile-bottom.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     br {
@@ -67,7 +79,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding: 23px 18px;
+  padding: 23px 18px 46px 18px;
   text-align: start;
 
   @media (min-width: @tablet-width) {
@@ -87,6 +99,7 @@
     background-color: @grey-background;
     position: relative;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -263,6 +276,7 @@
 }
 
 .advantages__title--blue-background {
+  padding-top: 33px;
   padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
@@ -272,6 +286,13 @@
   }
 }
 
+.advantages__title--town {
+  padding-top: 57px;
+}
+
+.advantages__title--bridge {
+  padding-top: 38px;
+}
 .advantages__title--grey-background {
   padding-bottom: 11px;
 }
@@ -289,6 +310,7 @@
   &--blue-background {
     color: @white-color;
     padding-top: 17px;
+    padding-bottom: 38px;
 
     @media (min-width: @tablet-width) {
       padding-left: 33px;
@@ -301,6 +323,9 @@
   padding-top: 17px;
 }
 
+.advantages__description--bridge {
+  padding-bottom: 36px;
+}
 .advantages__photo {
   vertical-align: middle;
 
@@ -353,7 +378,7 @@
   }
 }
 .advantages__item--grey-background .advantages__wrapper {
-  padding: 24px 26px;
+  padding: 24px 26px 26px 26px;
 
   @media (min-width: @tablet-width) {
     padding: 52px 33px;

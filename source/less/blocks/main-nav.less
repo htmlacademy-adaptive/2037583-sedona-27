@@ -1,6 +1,7 @@
 .main-nav {
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
+  font-size: 18px;
   position: relative;
   width: auto;
   min-height: 56px;
@@ -13,8 +14,8 @@
   right: 15px;
   z-index: 2;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -56,9 +57,9 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 8px;
+  top: 10px;
   left: auto;
-  right: 10px;
+  right: 14px;
   z-index: 11;
 
   &::before,
@@ -66,7 +67,7 @@
     content: "";
     position: absolute;
     left: 4px;
-    width: 20px;
+    width: 26px;
     height: 4px;
     background-color: @white-color;
   }
@@ -152,6 +153,8 @@
 }
 
 .main-nav__item:last-child {
+  padding-bottom: 9px;
+
   ::before {
     content: "";
     position: absolute;
@@ -159,7 +162,7 @@
     width: 320px;
     height: 7px;
     left: 0;
-    top: 44px;
+    top: 45px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 
     @media (min-width: @tablet-width) {
