@@ -48,12 +48,18 @@
     height: 37px;
     background-image: url("/images/index/triangle-mobile-bottom.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
     br {
       display: none;
     }
+
+    padding-bottom: 54px;
   }
 }
 
@@ -165,11 +171,11 @@
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      width: 77px;
-      height: 72px;
-      top: 50px;
-      left: 90px;
-      background-size: 77px 72px;
+      width: 80px;
+      height: 80px;
+      top: 55px;
+      left: 87px;
+      background-size: 80px 80px;
     }
 
     @media (min-width: @desktop-width) {
@@ -195,11 +201,11 @@
     background-image: url("../images/index/burger-icon.svg");
 
     @media (min-width: @tablet-width) {
-      width: 80px;
-      height: 68px;
-      top: 50px;
-      left: 90px;
-      background-size: 80px 68px;
+      width: 98px;
+      height: 78px;
+      top: 57px;
+      left: 80px;
+      background-size: 98px 78px;
     }
 
     @media (min-width: @desktop-width) {
@@ -228,11 +234,11 @@
     background-image: url("../images/index/gift-icon.svg");
 
     @media (min-width: @tablet-width) {
-      width: 66px;
-      height: 75px;
-      top: 50px;
-      left: 90px;
-      background-size: 66px 75px;
+      width: 80px;
+      height: 90px;
+      top: 53px;
+      left: 70px;
+      background-size: 80px 95px;
     }
 
     @media (min-width: @desktop-width) {
@@ -241,6 +247,10 @@
       left: 150px;
       background-size: 77px 75px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 153px;
   }
 }
 
@@ -253,14 +263,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-column: 1 / 4;
-  }
-}
-
-.advantages__title--sedona-city {
-  grid-column: 2 / 3;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 30px;
   }
 }
 
@@ -286,15 +288,51 @@
   }
 }
 
+.advantages__title--sedona-city {
+  grid-column: 2 / 3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-bottom: 23px;
+  }
+}
+
 .advantages__title--town {
   padding-top: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 49px;
+  }
 }
 
 .advantages__title--bridge {
   padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 52px;
+  }
 }
+
 .advantages__title--grey-background {
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.advantages__title--food {
+  @media (min-width: @tablet-width) {
+    padding-right: 16px;
+  }
+}
+
+.advantages__title--souvenirs {
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .advantages__description {
@@ -313,25 +351,46 @@
     padding-bottom: 38px;
 
     @media (min-width: @tablet-width) {
+      padding-top: 23px;
       padding-left: 33px;
       padding-right: 33px;
+      padding-bottom: 27px;
     }
   }
 }
 
 .advantages__description--grey-background {
   padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
+}
+
+.advantages__description--road {
+  @media (min-width: @tablet-width) {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
 }
 
 .advantages__description--bridge {
   padding-bottom: 36px;
 }
+
+.advantages__description--food {
+  @media (min-width: @tablet-width) {
+    padding-left: 13px;
+    padding-right: 29px;
+  }
+}
+
 .advantages__photo {
   vertical-align: middle;
 
   @media (min-width: @tablet-width) {
     width: 512px;
-    height: 256px;
+    height: auto;
   }
 
   @media (min-width: @desktop-width) {
