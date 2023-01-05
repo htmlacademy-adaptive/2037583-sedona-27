@@ -31,6 +31,11 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+    padding-top: 61px;
+  }
 }
 
 .advantages__intro {
@@ -60,6 +65,11 @@
     }
 
     padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 28px;
+    padding-bottom: 42px;
   }
 }
 
@@ -97,6 +107,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -155,6 +166,13 @@
     text-align: center;
     padding: 157px 33px 58px 33px;
   }
+
+  @media (min-width: @desktop-width) {
+  max-width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 68px;
+  }
 }
 
 .advantages__item--housing {
@@ -179,10 +197,16 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 80px;
-      left: 165px;
-      background-size: 80px 72px;
+      width: 90px;
+      height: 80px;
+      left: 155px;
+      top: 65px;
+      background-size: 90px 80px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 169px;
   }
 }
 
@@ -209,10 +233,11 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 73px;
-      height: 69px;
-      left: 165px;
-      background-size: 73px 69px;
+      width: 79px;
+      height: 78px;
+      top: 69px;
+      left: 141px;
+      background-size: 79px 78px;
     }
   }
 
@@ -242,15 +267,20 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 77px;
-      height: 75px;
-      left: 150px;
-      background-size: 77px 75px;
+      width: 130px;
+      height: 82px;
+      top: 65px;
+      left: 133px;
+      background-size: 130px 82px;
     }
   }
 
   @media (min-width: @tablet-width) {
     padding-top: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
   }
 }
 
@@ -268,6 +298,7 @@
 
 .advantages__description--sedona-city {
   grid-column: 2 / 3;
+
 }
 
 .advantages__title {
@@ -303,6 +334,12 @@
   @media (min-width: @tablet-width) {
     padding-top: 49px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 29px;
+  }
 }
 
 .advantages__title--bridge {
@@ -310,6 +347,12 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 }
 
@@ -321,17 +364,30 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
 }
 
 .advantages__title--food {
   @media (min-width: @tablet-width) {
     padding-right: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-right: 0;
+  }
 }
 
 .advantages__title--souvenirs {
   @media (min-width: @tablet-width) {
     padding-right: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
   }
 }
 
@@ -356,6 +412,11 @@
       padding-right: 33px;
       padding-bottom: 27px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
   }
 }
 
@@ -376,12 +437,22 @@
 
 .advantages__description--bridge {
   padding-bottom: 36px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
 }
 
 .advantages__description--food {
   @media (min-width: @tablet-width) {
     padding-left: 13px;
     padding-right: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -444,8 +515,21 @@
   }
 }
 
+.advantages__item--grey-background:nth-child(1n) .advantages__wrapper {
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .advantages__item--grey-background:nth-child(2n) .advantages__wrapper {
   @media (min-width: @tablet-width) {
     padding: 41px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
   }
 }
