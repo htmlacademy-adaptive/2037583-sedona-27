@@ -3,7 +3,7 @@
   padding: 39px 20px 17px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 66px 0;
+    padding: 66px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,6 +31,10 @@
   font-size: 18px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .catalog__description {
@@ -43,5 +47,10 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 0;
   }
 }

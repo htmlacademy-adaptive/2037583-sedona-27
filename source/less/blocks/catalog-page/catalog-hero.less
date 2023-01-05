@@ -19,7 +19,13 @@
       content: url("../images/intro-triangle-tablet.svg");
       width: 1200px;
       height: 57px;
+      left: -216px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../images/catalog-form-back-desktop.jpg");
+    background-size: 156%;
   }
 }
 
@@ -30,6 +36,8 @@
   padding-bottom: 67px;
 
   @media (min-width: @tablet-width) {
+    width: 457px;
+    height: auto;
     padding-top: 95px;
     padding-bottom: 117px;
   }
