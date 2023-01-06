@@ -1,6 +1,10 @@
 .rewiew-footer {
   padding-top: 36px;
   padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 79px;
+  }
 }
 
 .rewiew-footer__wrapper {
@@ -8,5 +12,11 @@
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
+  }
+}
+
+.rewiew-footer__copyright {
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
   }
 }

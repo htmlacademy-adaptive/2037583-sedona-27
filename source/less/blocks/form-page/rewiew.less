@@ -23,7 +23,9 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-size: 30px;
   }
 }
 
@@ -31,24 +33,51 @@
   padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 0 0 0 39px;
+    font-size: 21px;
   }
 }
 
 .rewiew__contact-info {
   padding-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 13px;
+    font-size: 21px;
+  }
 }
 
 .rewiew__title--impression {
   padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
 }
 
 .rewiew__title--attraction {
   padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 14px;
+  }
 }
 
 .rewiew__title--text {
   padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 26px;
+  }
 }
 
 .rewiew__description {
@@ -83,6 +112,10 @@
       display: none;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
 }
 
 .rewiew__initials {
@@ -101,6 +134,10 @@
   text-transform: uppercase;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
   }
@@ -113,7 +150,7 @@
     height: 58px;
     width: 58px;
     bottom: 0;
-    right: 0;
+    right: -20px;
     background-image: url("../images/form/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +165,7 @@
     height: 58px;
     width: 58px;
     bottom: 0;
-    right: 0;
+    right: -20px;
     background-image: url("../images/form/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -139,15 +176,14 @@
 .rewiew__container {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
 
     &::before {
       position: absolute;
       content: "";
       height: 338px;
       width: 1px;
-      top: 20px;
-      right: 322px;
+      top: 75px;
+    right: 324px;
       background-color: @form-line-color;
     }
 
@@ -187,11 +223,19 @@
 .rewiew__box--attraction {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .rewiew__box--text {
   padding-top: 24px;
   padding-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+  }
 }
 
 .rewiew__group {
@@ -229,6 +273,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-top: 28px;
     flex-direction: column;
     padding-right: 43px;
   }
@@ -261,7 +306,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    padding-left: 43px;
+    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -293,7 +338,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 410px;
+      top: 474px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -303,7 +348,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 410px;
+      top: 474px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -343,7 +388,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 610px;
+      top: 698px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -353,7 +398,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 610px;
+      top: 698px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -377,6 +422,7 @@
 .rewiew__group--text {
   @media (min-width: @tablet-width) {
     justify-content: center;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -391,7 +437,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 840px;
+      top: 915px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -401,7 +447,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 840px;
+      top: 915px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -474,6 +520,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -491,6 +538,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 83px;
   }
 
   @media (min-width: @desktop-width) {
@@ -535,7 +583,7 @@
 
 .rewiew__item--attraction {
   @media (min-width: @tablet-width) {
-    padding-right: 32px;
+    padding-right: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -656,6 +704,10 @@
 .rewiew__button {
   font-size: 18px;
   padding: 16px 32px 16px 33px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 71px 16px 70px;
+  }
 }
 
 .rewiew__remark {
@@ -665,4 +717,9 @@
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+    font-size: 14px;
+  }
 }
