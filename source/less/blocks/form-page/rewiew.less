@@ -1,5 +1,5 @@
 .rewiew {
-  padding: 36px 20px 24px 20px;
+  padding: 36px 20px 14px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,16 +28,32 @@
 }
 
 .rewiew__presentation {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
+.rewiew__contact-info {
+  padding-bottom: 6px;
+}
+
+.rewiew__title--impression {
+  padding-bottom: 5px;
+}
+
+.rewiew__title--attraction {
+  padding-bottom: 5px;
+}
+
+.rewiew__title--text {
+  padding-bottom: 5px;
+}
+
 .rewiew__description {
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -75,6 +91,10 @@
   @media (min-width: @desktop-width) {
     display: grid;
   }
+}
+
+.rewiew__label {
+  padding-left: 15px;
 }
 
 .rewiew__contacts {
@@ -171,7 +191,7 @@
 
 .rewiew__box--text {
   padding-top: 24px;
-  padding-bottom: 56px;
+  padding-bottom: 49px;
 }
 
 .rewiew__group {
@@ -199,7 +219,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 382px;
+    top: 379px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -230,7 +250,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 680px;
+    top: 658px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -256,7 +276,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 964px;
+    top: 923px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -306,7 +326,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 1336px;
+    top: 1276px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -402,9 +422,9 @@
 
 .rewiew__input {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 16px 25px 16px 16px;
+  padding: 16px 51px 16px 16px;
   background-color: @body-background;
   border: none;
 
@@ -424,7 +444,7 @@
 
 .rewiew__input::placeholder {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -480,6 +500,7 @@
 }
 
 .rewiew__text {
+  word-spacing: -6px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -612,7 +633,6 @@
 .rewiew__container--button {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -634,10 +654,13 @@
 }
 
 .rewiew__button {
-  padding: 16px 33px;
+  font-size: 18px;
+  padding: 16px 32px 16px 33px;
 }
 
 .rewiew__remark {
+  padding-left: 143px;
+    padding-top: 2px;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 21px;
