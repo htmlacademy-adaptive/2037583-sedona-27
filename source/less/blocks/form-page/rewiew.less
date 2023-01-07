@@ -27,6 +27,11 @@
     padding-bottom: 24px;
     font-size: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
 }
 
 .rewiew__presentation {
@@ -35,6 +40,10 @@
   @media (min-width: @tablet-width) {
     padding: 0 0 0 39px;
     font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
   }
 }
 
@@ -55,6 +64,10 @@
     font-size: 21px;
     padding-top: 0;
     padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 22px;
   }
 }
 
@@ -116,6 +129,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 77px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+  }
 }
 
 .rewiew__initials {
@@ -150,11 +167,23 @@
     height: 58px;
     width: 58px;
     bottom: 0;
-    right: -20px;
+    right: 0;
     background-image: url("../images/form/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: @background-color-contacts-icon;
+
+    @media (min-width: @tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
   }
 }
 
@@ -165,11 +194,23 @@
     height: 58px;
     width: 58px;
     bottom: 0;
-    right: -20px;
+    right: 0;
     background-image: url("../images/form/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: @background-color-contacts-icon;
+
+    @media (min-width: @tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
   }
 }
 
@@ -183,15 +224,12 @@
       height: 338px;
       width: 1px;
       top: 75px;
-    right: 324px;
+      right: 324px;
       background-color: @form-line-color;
-    }
 
-    @media (min-width: @desktop-width) {
-      display: flex;
-      justify-content: space-between;
 
-      &::before {
+      @media (min-width: @desktop-width) {
+        top: 42px;
         left: 492px;
       }
     }
@@ -218,6 +256,10 @@
 .rewiew__box--impression {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 0;
+  }
 }
 
 .rewiew__box--attraction {
@@ -227,6 +269,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+  }
 }
 
 .rewiew__box--text {
@@ -235,6 +281,10 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 87px;
   }
 }
 
@@ -310,7 +360,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 63px;
+    padding-left: 33px;
     grid-template-columns: 402px;
   }
 }
@@ -357,10 +407,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       width: 280px;
+      top: 447px;
     }
 
     &::after {
       width: 280px;
+      top: 447px;
     }
   }
 }
@@ -408,12 +460,12 @@
     padding: 0 327px 0 327px;
 
     &::before {
-      top: 545px;
+      top: 650px;
       width: 280px;
     }
 
     &::after {
-      top: 545px;
+      top: 650px;
       width: 280px;
     }
   }
@@ -455,12 +507,12 @@
 
   @media (min-width: @desktop-width) {
     &::before {
-      top: 685px;
+      top: 882px;
       width: 280px;
     }
 
     &::after {
-      top: 685px;
+      top: 882px;
       width: 280px;
     }
   }
@@ -526,9 +578,21 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 17px 53px;
   }
 }
 
+.rewiew__list--impression .rewiew__item {
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.rewiew__list--impression .rewiew__item:not(:nth-child(3n)) {
+  @media (min-width: @desktop-width) {
+    padding-right: 28px;
+  }
+}
 .rewiew__list--attraction {
   display: grid;
   grid-template-columns: 280px;
@@ -544,6 +608,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 44px;
+    padding-left: 47px;
   }
 }
 
@@ -668,6 +734,12 @@
   }
 }
 
+.rewiew-control__label--refrain {
+  @media (min-width: @desktop-width) {
+    padding: 10px 0 10px 62px;
+  }
+}
+
 .rewiew-control__label--attraction {
   @media (min-width: @tablet-width) {
     padding: 10px 52px 10px 62px;
@@ -707,6 +779,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 16px 71px 16px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 99px 16px 102px;
   }
 }
 
