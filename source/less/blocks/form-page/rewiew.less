@@ -532,7 +532,11 @@
 
   &:focus-visible {
     background-color: @white-color;
-    outline: 4px solid #e5e5e5;
+    outline: 4px solid @disabled-color;
+  }
+
+  &:required {
+    outline: 4px solid @required-form-field;
   }
 
   @media (min-width: @desktop-width) {
@@ -680,6 +684,7 @@
 
 .rewiew-control__input[type="radio"] + .rewiew-control__mark {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .rewiew-control__input[type="radio"]:checked + .rewiew-control__mark::before {
@@ -774,7 +779,7 @@
 }
 
 .rewiew__button {
-  font-size: 18px;
+  font-size: 21px;
   padding: 16px 32px 16px 33px;
 
   @media (min-width: @tablet-width) {

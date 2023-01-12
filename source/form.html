@@ -65,11 +65,11 @@
                 <legend class="rewiew__title rewiew__presentation">Представьтесь:</legend>
                 <label class="rewiew__initials">
                   <span class="rewiew__label">Имя*:</span>
-                  <input class="rewiew__input" type="text" value="Пётр" required>
+                  <input class="rewiew__input" type="text" value="Пётр">
                 </label>
                 <label class="rewiew__initials">
                   <span class="rewiew__label">Фамилия*:</span>
-                  <input class="rewiew__input" type="text" value="Пустота" required>
+                  <input class="rewiew__input" type="text" value="Пустота">
                 </label>
                 <label class="rewiew__initials">
                   <span class="rewiew__label">Отчество:</span>
@@ -82,11 +82,11 @@
                 <legend class="rewiew__title rewiew__contact-info">Контактная информация:</legend>
                 <label class="rewiew__contacts rewiew__contacts--tel">
                   <span class="rewiew__label">Контактный телефон*:</span>
-                  <input class="rewiew__input rewiew__input--tel" type="tel" placeholder="Введите телефон" required>
+                  <input class="rewiew__input rewiew__input--tel" type="tel" placeholder="Введите телефон">
                 </label>
                 <label class="rewiew__contacts rewiew__contacts--email">
                   <span class="rewiew__label">Электронная почта*:</span>
-                  <input class="rewiew__input rewiew__input--email" type="email" placeholder="Введите e-mail" required>
+                  <input class="rewiew__input rewiew__input--email" type="email" placeholder="Введите e-mail">
                 </label>
               </fieldset>
             </div>
@@ -217,6 +217,28 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="rewiew-modal__container rewiew-modal__container--closed">
+    <div class="rewiew-modal__content rewiew-modal__content--error">
+      <span class="rewiew-modal__header rewiew-modal__header--error">
+        Что-то пошло не&nbsp;так!</span>
+      <p class="rewiew-modal__text rewiew-modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли
+        их заполнить</p>
+      <div class="rewiew-modal__wrapper rewiew-modal__wrapper--button-error">
+        <button class="rewiew-modal__button rewiew-modal__button--error button" type="button">Ок</button>
+      </div>
+    </div>
+  </div>
+  <div class="rewiew-modal__container">
+    <div class="rewiew-modal__content rewiew-modal__content--success">
+      <span class="rewiew-modal__header rewiew-modal__header--success">
+        Ваш отзыв отправлен!</span>
+      <p class="rewiew-modal__text rewiew-modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <div class="rewiew-modal__wrapper rewiew-modal__wrapper--button-success">
+        <button class="rewiew-modal__button rewiew-modal__button--success button" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
   <script src="js/script.min.js"></script>
 </body>
