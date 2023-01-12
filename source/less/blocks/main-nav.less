@@ -1,9 +1,15 @@
 .main-nav {
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
+  font-size: 18px;
   position: relative;
   width: auto;
   min-height: 56px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .main-nav__toggle {
@@ -13,8 +19,8 @@
   right: 15px;
   z-index: 2;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -56,9 +62,9 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 8px;
+  top: 10px;
   left: auto;
-  right: 10px;
+  right: 14px;
   z-index: 11;
 
   &::before,
@@ -66,7 +72,7 @@
     content: "";
     position: absolute;
     left: 4px;
-    width: 20px;
+    width: 26px;
     height: 4px;
     background-color: @white-color;
   }
@@ -128,7 +134,7 @@
   @media (min-width: @tablet-width) {
     color: @black-color;
     background-color: @white-color;
-    padding: 18px 27px 17px 28px;
+    padding: 18px 12px 17px 44px;
     border: none;
     box-shadow: none;
   }
@@ -151,7 +157,35 @@
   min-height: 80vh;
 }
 
+.main-nav__item:first-child a {
+  @media (min-width: @tablet-width) {
+    padding-left: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 90px;
+  }
+}
+
+.main-nav__item:nth-child(2n) {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+}
+
+.main-nav__item:nth-child(3n) {
+  @media (min-width: @tablet-width) {
+    padding-left: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 238px;
+  }
+}
+
 .main-nav__item:last-child {
+  padding-bottom: 9px;
+
   ::before {
     content: "";
     position: absolute;
@@ -159,25 +193,18 @@
     width: 320px;
     height: 7px;
     left: 0;
-    top: 44px;
+    top: 49px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 
     @media (min-width: @tablet-width) {
       display: none;
     }
   }
-}
 
-.main-nav__item:nth-child(3n) {
   @media (min-width: @tablet-width) {
-    padding-left: 178px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 197px;
+    padding: 0;
   }
 }
-
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {

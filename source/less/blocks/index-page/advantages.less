@@ -16,6 +16,7 @@
 
 .advantages__slogan {
   font-weight: 700;
+  line-height: 26px;
   font-size: 18px;
   margin: 0;
   padding-top: 32px;
@@ -23,23 +24,52 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    line-height: 26px;
+    padding-top: 49px;
+    padding-bottom: 30px;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+    padding-top: 61px;
   }
 }
 
 .advantages__intro {
   color: @brown-text;
   margin: 0;
-  padding-bottom: 53px;
+  padding-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 320px;
+    height: 37px;
+    background-image: url("/images/index/triangle-mobile-bottom.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     br {
       display: none;
     }
+
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 28px;
+    padding-bottom: 42px;
   }
 }
 
@@ -65,7 +95,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding: 23px 18px;
+  padding: 23px 18px 46px 18px;
   text-align: start;
 
   @media (min-width: @tablet-width) {
@@ -77,6 +107,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -85,6 +116,7 @@
     background-color: @grey-background;
     position: relative;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -134,6 +166,13 @@
     text-align: center;
     padding: 157px 33px 58px 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 68px;
+  }
 }
 
 .advantages__item--housing {
@@ -150,18 +189,24 @@
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      width: 77px;
-      height: 72px;
-      top: 50px;
-      left: 90px;
-      background-size: 77px 72px;
+      width: 80px;
+      height: 80px;
+      top: 55px;
+      left: 87px;
+      background-size: 80px 80px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 80px;
-      left: 165px;
-      background-size: 80px 72px;
+      width: 90px;
+      height: 80px;
+      left: 155px;
+      top: 65px;
+      background-size: 90px 80px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 169px;
   }
 }
 
@@ -180,18 +225,19 @@
     background-image: url("../images/index/burger-icon.svg");
 
     @media (min-width: @tablet-width) {
-      width: 80px;
-      height: 68px;
-      top: 50px;
-      left: 90px;
-      background-size: 80px 68px;
+      width: 98px;
+      height: 78px;
+      top: 57px;
+      left: 80px;
+      background-size: 98px 78px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 73px;
-      height: 69px;
-      left: 165px;
-      background-size: 73px 69px;
+      width: 79px;
+      height: 78px;
+      top: 69px;
+      left: 141px;
+      background-size: 79px 78px;
     }
   }
 
@@ -213,19 +259,28 @@
     background-image: url("../images/index/gift-icon.svg");
 
     @media (min-width: @tablet-width) {
-      width: 66px;
-      height: 75px;
-      top: 50px;
-      left: 90px;
-      background-size: 66px 75px;
+      width: 80px;
+      height: 90px;
+      top: 53px;
+      left: 70px;
+      background-size: 80px 95px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 77px;
-      height: 75px;
-      left: 150px;
-      background-size: 77px 75px;
+      width: 130px;
+      height: 82px;
+      top: 65px;
+      left: 133px;
+      background-size: 130px 82px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
   }
 }
 
@@ -241,14 +296,6 @@
   }
 }
 
-.advantages__title--sedona-city {
-  grid-column: 2 / 3;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 30px;
-  }
-}
-
 .advantages__description--sedona-city {
   grid-column: 2 / 3;
 }
@@ -261,11 +308,87 @@
 }
 
 .advantages__title--blue-background {
+  padding-top: 33px;
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+.advantages__title--sedona-city {
+  grid-column: 2 / 3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-bottom: 23px;
+  }
+}
+
+.advantages__title--town {
+  padding-top: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 29px;
+  }
+}
+
+.advantages__title--bridge {
+  padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }
 
 .advantages__title--grey-background {
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+}
+
+.advantages__title--food {
+  @media (min-width: @tablet-width) {
+    padding-right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+}
+
+.advantages__title--souvenirs {
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .advantages__description {
@@ -281,24 +404,69 @@
   &--blue-background {
     color: @white-color;
     padding-top: 17px;
+    padding-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 23px;
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-bottom: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
   }
 }
 
 .advantages__description--grey-background {
   padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
+}
+
+.advantages__description--road {
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.advantages__description--bridge {
+  padding-bottom: 36px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+}
+
+.advantages__description--food {
+  @media (min-width: @tablet-width) {
+    padding-left: 13px;
+    padding-right: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .advantages__photo {
   vertical-align: middle;
-}
 
-.advantages__photo--bridge {
   @media (min-width: @tablet-width) {
-    order: -1;
+    width: 512px;
+    height: auto;
   }
 
   @media (min-width: @desktop-width) {
-    order: -1;
+    width: 800px;
+    height: 256px;
   }
 }
 
@@ -320,29 +488,49 @@
 }
 
 .advantages__wrapper {
-  padding: 33px 18px 40px 18px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    max-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+  }
+}
+
+.advantages__item--bridge .advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 2;
   }
 }
 
 .advantages__item--grey-background .advantages__wrapper {
-  padding: 24px 26px;
+  padding: 24px 26px 26px 26px;
 
   @media (min-width: @tablet-width) {
     padding: 52px 33px;
   }
 }
 
+.advantages__item--grey-background:nth-child(1n) .advantages__wrapper {
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .advantages__item--grey-background:nth-child(2n) .advantages__wrapper {
   @media (min-width: @tablet-width) {
     padding: 41px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
   }
 }

@@ -1,5 +1,5 @@
 .rewiew {
-  padding: 36px 20px 24px 20px;
+  padding: 36px 20px 14px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,21 +23,79 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-bottom: 32px;
   }
 }
 
 .rewiew__presentation {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 0 0 0 39px;
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
+  }
+}
+
+.rewiew__contact-info {
+  padding-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 13px;
+    font-size: 21px;
+  }
+}
+
+.rewiew__title--impression {
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 22px;
+  }
+}
+
+.rewiew__title--attraction {
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 14px;
+  }
+}
+
+.rewiew__title--text {
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 26px;
   }
 }
 
 .rewiew__description {
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -67,6 +125,14 @@
       display: none;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+  }
 }
 
 .rewiew__initials {
@@ -77,9 +143,17 @@
   }
 }
 
+.rewiew__label {
+  padding-left: 15px;
+}
+
 .rewiew__contacts {
   text-transform: uppercase;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -98,6 +172,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: @background-color-contacts-icon;
+
+    @media (min-width: @tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
   }
 }
 
@@ -113,29 +199,37 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: @background-color-contacts-icon;
+
+    @media (min-width: @tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -31px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
   }
 }
 
 .rewiew__container {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
 
     &::before {
       position: absolute;
       content: "";
       height: 338px;
       width: 1px;
-      top: 20px;
-      right: 322px;
+      top: 75px;
+      right: 324px;
       background-color: @form-line-color;
-    }
 
-    @media (min-width: @desktop-width) {
-      display: flex;
-      justify-content: space-between;
 
-      &::before {
+      @media (min-width: @desktop-width) {
+        top: 42px;
         left: 492px;
       }
     }
@@ -162,16 +256,36 @@
 .rewiew__box--impression {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 0;
+  }
 }
 
 .rewiew__box--attraction {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+  }
 }
 
 .rewiew__box--text {
   padding-top: 24px;
-  padding-bottom: 56px;
+  padding-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 87px;
+  }
 }
 
 .rewiew__group {
@@ -199,7 +313,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 382px;
+    top: 379px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -209,6 +323,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-top: 28px;
     flex-direction: column;
     padding-right: 43px;
   }
@@ -230,7 +345,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 680px;
+    top: 658px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -241,11 +356,11 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    padding-left: 43px;
+    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 63px;
+    padding-left: 33px;
     grid-template-columns: 402px;
   }
 }
@@ -256,7 +371,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 964px;
+    top: 923px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -273,7 +388,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 410px;
+      top: 474px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -283,7 +398,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 410px;
+      top: 474px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -292,10 +407,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       width: 280px;
+      top: 447px;
     }
 
     &::after {
       width: 280px;
+      top: 447px;
     }
   }
 }
@@ -306,7 +423,7 @@
     content: "";
     height: 1px;
     width: 320px;
-    top: 1336px;
+    top: 1276px;
     left: -20px;
     background-color: @disabled-color;
 
@@ -323,7 +440,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 610px;
+      top: 698px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -333,7 +450,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 610px;
+      top: 698px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -343,12 +460,12 @@
     padding: 0 327px 0 327px;
 
     &::before {
-      top: 545px;
+      top: 650px;
       width: 280px;
     }
 
     &::after {
-      top: 545px;
+      top: 650px;
       width: 280px;
     }
   }
@@ -357,6 +474,7 @@
 .rewiew__group--text {
   @media (min-width: @tablet-width) {
     justify-content: center;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -371,7 +489,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 840px;
+      top: 915px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -381,7 +499,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 840px;
+      top: 915px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -389,12 +507,12 @@
 
   @media (min-width: @desktop-width) {
     &::before {
-      top: 685px;
+      top: 882px;
       width: 280px;
     }
 
     &::after {
-      top: 685px;
+      top: 882px;
       width: 280px;
     }
   }
@@ -402,9 +520,9 @@
 
 .rewiew__input {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 16px 25px 16px 16px;
+  padding: 16px 51px 16px 16px;
   background-color: @body-background;
   border: none;
 
@@ -414,7 +532,11 @@
 
   &:focus-visible {
     background-color: @white-color;
-    outline: 4px solid #e5e5e5;
+    outline: 4px solid @disabled-color;
+  }
+
+  &:required {
+    outline: 4px solid @required-form-field;
   }
 
   @media (min-width: @desktop-width) {
@@ -424,7 +546,7 @@
 
 .rewiew__input::placeholder {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -454,11 +576,25 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 35px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 17px 53px;
+  }
+}
+
+.rewiew__list--impression .rewiew__item {
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.rewiew__list--impression .rewiew__item:not(:nth-child(3n)) {
+  @media (min-width: @desktop-width) {
+    padding-right: 28px;
   }
 }
 
@@ -471,15 +607,19 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 83px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 44px;
+    padding-left: 47px;
   }
 }
 
 .rewiew__text {
+  word-spacing: -6px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -514,7 +654,7 @@
 
 .rewiew__item--attraction {
   @media (min-width: @tablet-width) {
-    padding-right: 32px;
+    padding-right: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -545,6 +685,7 @@
 
 .rewiew-control__input[type="radio"] + .rewiew-control__mark {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .rewiew-control__input[type="radio"]:checked + .rewiew-control__mark::before {
@@ -599,6 +740,12 @@
   }
 }
 
+.rewiew-control__label--refrain {
+  @media (min-width: @desktop-width) {
+    padding: 10px 0 10px 62px;
+  }
+}
+
 .rewiew-control__label--attraction {
   @media (min-width: @tablet-width) {
     padding: 10px 52px 10px 62px;
@@ -612,7 +759,6 @@
 .rewiew__container--button {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -634,12 +780,28 @@
 }
 
 .rewiew__button {
-  padding: 16px 33px;
+  font-size: 21px;
+  padding: 16px 32px 16px 33px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 71px 16px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 99px 16px 102px;
+  }
 }
 
 .rewiew__remark {
+  padding-left: 143px;
+  padding-top: 2px;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+    font-size: 14px;
+  }
 }

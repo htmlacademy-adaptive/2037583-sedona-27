@@ -78,14 +78,21 @@
             <li class="advantages__item advantages__item--town">
               <div class="advantages__container advantages__container--blue-background">
                 <div class="advantages__wrapper">
-                  <h3 class="advantages__title advantages__title--blue-background">Настоящий городок</h3>
+                  <h3 class="advantages__title advantages__title--blue-background advantages__title--town">Настоящий
+                    городок</h3>
                   <span class="advantages__number">— №1 —</span>
                   <p class="advantages__description advantages__description--blue-background">
                     Седона не аттракцион для туристов,<br>
                     там течет своя жизнь</p>
                 </div>
-                <img class="advantages__photo" src="images/index/photo-city.jpg" width="520" height="260"
-                  alt="Фотография города Седоны.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/index/photo-city-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/index/photo-city-tablet.webp">
+                  <source media="(min-width: 1200px)" srcset="images/index/photo-city-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="images/index/photo-city-tablet.jpg">
+                  <img class="advantages__photo" src="images/index/photo-city.jpg" width="520" height="260"
+                    alt="Фотография города Седоны.">
+                </picture>
               </div>
               <ul class="advantages__list advantages__list--sedona-city">
                 <li class="advantages__item advantages__item--sedona-city advantages__item--housing">
@@ -101,8 +108,7 @@
                   <h4 class="advantages__title advantages__title--sedona-city advantages__title--food">Еда</h4>
                   <p class="advantages__description advantages__description--sedona-city advantages__description--food">
                     Всегда заказывайте фирменный<br>
-                    бургер, Вы не<br>
-                    разочаруетесь!
+                    бургер, Вы&nbsp;не разочаруетесь!
                   </p>
                 </li>
                 <li class="advantages__item advantages__item--sedona-city advantages__item--souvenirs">
@@ -119,15 +125,22 @@
             <li class="advantages__item advantages__item--bridge">
               <div class="advantages__container advantages__container--blue-background">
                 <div class="advantages__wrapper">
-                  <h3 class="advantages__title advantages__title--blue-background">Там есть Мост дьявола</h3>
+                  <h3 class="advantages__title advantages__title--blue-background advantages__title--bridge">Там есть
+                    Мост&nbsp;дьявола</h3>
                   <span class="advantages__number">— №2 —</span>
-                  <p class="advantages__description advantages__description--blue-background">
+                  <p class="advantages__description advantages__description--blue-background advantages__description--bridge">
                     Да, по нему можно пройти! Если вы<br>
                     осмелитесь, конечно
                   </p>
                 </div>
-                <img class="advantages__photo advantages__photo--bridge" src="images/index/photo-bridge.jpg" width="520"
-                  height="260" alt="Фотография Моста дьявола.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/index/photo-bridge-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/index/photo-bridge-tablet.webp">
+                  <source media="(min-width: 1200px)" srcset="images/index/photo-bridge-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="images/index/photo-bridge-tablet.jpg">
+                  <img class="advantages__photo advantages__photo--bridge" src="images/index/photo-bridge.jpg"
+                    width="520" height="260" alt="Фотография Моста дьявола.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--grey-background">
@@ -144,9 +157,9 @@
               <div class="advantages__wrapper">
                 <h3 class="advantages__title advantages__title--grey-background">Красивая дорога</h3>
                 <span class="advantages__number">— №4 —</span>
-                <p class="advantages__description advantages__description--grey-background">
+                <p class="advantages__description advantages__description--grey-background advantages__description--road">
                   Ехать в Седону из Лас-Вегаса<br>
-                  совсем не скучно!
+                  совсем не&nbsp;скучно!
                 </p>
               </div>
             </li>
@@ -178,7 +191,7 @@
         <h2 class="visually-hidden">Расположение Седоны на карте</h2>
         <div class="map__wrapper">
           <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"
             width="320" height="350" allowfullscreen title="Местоположение Седоны на карте."></iframe>
         </div>
       </section>

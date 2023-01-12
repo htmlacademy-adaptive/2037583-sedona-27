@@ -1,12 +1,16 @@
 .copyright {
   text-align: center;
-  padding-bottom: 23px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
+    text-align: start;
     padding-top: 0;
     padding-bottom: 0;
-    display: flex;
-    justify-content: center;
+    padding-left: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 136px;
   }
 }
 
@@ -27,4 +31,6 @@
 
 .copyright__icon {
   vertical-align: middle;
+  width: 40px;
+  height: 40px;
 }
