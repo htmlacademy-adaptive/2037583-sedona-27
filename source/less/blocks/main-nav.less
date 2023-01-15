@@ -6,6 +6,10 @@
   width: auto;
   min-height: 56px;
 
+  @media (max-width: @mobile-width-only) {
+    z-index: 2;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 21px;
@@ -262,4 +266,8 @@
   padding-right: 21px;
   padding-left: 21px;
   text-align: center;
+}
+
+.main-nav--nojs .main-nav__item:last-child {
+  padding-bottom: 0;
 }
