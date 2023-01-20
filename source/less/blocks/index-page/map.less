@@ -1,18 +1,16 @@
-.map__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.map__wrapper iframe {
-  border: none;
-  display: block;
+.map {
+  width: 100%;
+  height: 350px;
+  background-image: url("/images/index/map-marker.svg.svg"), url("/images/index/map-mobile.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 27px 27px, cover;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    background-image: url("/images/index/map-marker.svg.svg"), url("/images/index/map-tablet.jpg");
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    background-image: url("/images/index/map-marker.svg.svg"), url("/images/index/map-desktop.jpg");
   }
 }
