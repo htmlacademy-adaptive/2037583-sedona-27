@@ -1,0 +1,45 @@
+.rewiew-modal__content {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  height: 280px;
+  top: 791px;
+  left: 0;
+  padding: 45px 42px 35px 41px;
+  background-color: @white-color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.rewiew-modal__content--error {
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    height: 347px;
+    top: 83px;
+    left: -108px;
+    padding-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 244px;
+    left: 0;
+  }
+}
+
+.rewiew-modal__content--success {
+  padding: 39px 0 0 0;
+  height: 323px;
+  top: 992px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 54px;
+    width: 640px;
+    height: 347px;
+    top: 162px;
+    left: -108px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 144px;
+    left: 0;
+  }
+}
