@@ -1,0 +1,25 @@
+.rewiew__text {
+  word-spacing: -6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: @body-background;
+  padding: 16px;
+  border: none;
+  min-width: 247px;
+  min-height: 118px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 616px;
+    min-height: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 736px;
+    min-height: 128px;
+  }
+}

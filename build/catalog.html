@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: каталог</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/favicon-32x32-svg.svg" type="image/svg+xml">
@@ -16,8 +18,7 @@
   <div class="body-container">
     <header class="main-header heder">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="images/logotype.svg" width="185" height="196"
-          alt="City of Sedona.">
+        <img class="main-header__logo-image" src="images/logotype.svg" width="185" height="196" alt="City of Sedona.">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -89,6 +90,10 @@
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="../images/catalog/desktop/cactus-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../images/catalog/tablet/cactus-tablet.webp">
                     <source media="(min-width: 1200px)" srcset="images/catalog/desktop/cactus-desktop.jpg">
                     <source media="(min-width: 768px)" srcset="images/catalog/tablet/cactus-tablet.jpg">
                     <img class="catalog-card__image" width="280" height="280" src="images/catalog/cactus.jpg"
@@ -108,6 +113,10 @@
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="../images/catalog/desktop/nord-road-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../images/catalog/tablet/nord-road-tablet.webp">
                     <source media="(min-width: 1200px)" srcset="images/catalog/desktop/nord-road-desktop.jpg">
                     <source media="(min-width: 768px)" srcset="images/catalog/tablet/nord-road-tablet.jpg">
                     <img class="catalog-card__image" width="280" height="280" src="images/catalog/nord-road.jpg"
@@ -127,6 +136,10 @@
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="../images/catalog/desktop/devil-bridge-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../images/catalog/tablet/devil-bridge-tablet.webp">
                     <source media="(min-width: 1200px)" srcset="images/catalog/desktop/devil-bridge-desktop.jpg">
                     <source media="(min-width: 768px)" srcset="images/catalog/tablet/devil-bridge-tablet.jpg">
                     <img class="catalog-card__image" width="280" height="280" src="images/catalog/devil-bridge.jpg"
@@ -152,11 +165,18 @@
           подорожали в очередной раз!
         </p>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+          srcset="../images/catalog/desktop/video-desktop.webp">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="../images/catalog/tablet/video-screenshot-tablet.webp">
           <source media="(min-width: 1200px)" srcset="images/catalog/desktop/video-desktop.jpg">
           <source media="(min-width: 768px)" srcset="images/catalog/tablet/video-screenshot-tablet.jpg">
           <img class="catalog-video__screenshot" width="280" height="177" src="images/catalog/video-screenshot.jpg"
             alt="Скриншот видеопрезентации о Седоне.">
         </picture>
+        <button class="catalog-video__button" type="button">
+          <span class="visually-hidden">Включить запись видеопрезентации</span>
+        </button>
       </section>
     </main>
     <footer class="catalog-footer">
@@ -166,7 +186,8 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social__icon social__icon--vkontakte" aria-hidden="true" focusable="false" width="24" height="24">
+                <svg class="social__icon social__icon--vkontakte" aria-hidden="true" focusable="false" width="24"
+                  height="24">
                   <use xlink:href="images/sprite.svg#icon-vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Седона в Вконтакте</span>
@@ -174,7 +195,8 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg class="social__icon social__icon--telegram" aria-hidden="true" focusable="false" width="24" height="24">
+                <svg class="social__icon social__icon--telegram" aria-hidden="true" focusable="false" width="24"
+                  height="24">
                   <use xlink:href="images/sprite.svg#icon-telegram"></use>
                 </svg>
                 <span class="visually-hidden">Седона в Телеграме</span>
@@ -182,7 +204,8 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon social__icon--youtube" aria-hidden="true" focusable="false" width="24" height="24">
+                <svg class="social__icon social__icon--youtube" aria-hidden="true" focusable="false" width="24"
+                  height="24">
                   <use xlink:href="images/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">Седона в Ютубе</span>
