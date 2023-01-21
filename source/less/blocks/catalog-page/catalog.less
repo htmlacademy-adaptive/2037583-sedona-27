@@ -10,3 +10,47 @@
     padding: 100px 0 0 0;
   }
 }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.catalog__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.catalog__description {
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 35px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+}
