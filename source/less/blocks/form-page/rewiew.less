@@ -78,14 +78,16 @@
 }
 
 .rewiew__group--impression .rewiew__title {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
       content: "";
       height: 1px;
       width: 123px;
-      top: 474px;
-      left: 0;
+      top: 11px;
+      left: -187px;
       background-color: @form-line-color;
     }
 
@@ -94,8 +96,8 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 474px;
-      right: 0;
+      top: 11px;
+      right: -187px;
       background-color: @form-line-color;
     }
   }
@@ -103,24 +105,26 @@
   @media (min-width: @desktop-width) {
     &::before {
       width: 280px;
-      top: 447px;
+      left: -4px;
     }
 
     &::after {
       width: 280px;
-      top: 447px;
+      right: -4px;
     }
   }
 }
 
 .rewiew__group--attraction .rewiew__title {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
       content: "";
       height: 1px;
       width: 123px;
-      top: 698px;
+      top: 26px;
       left: 0;
       background-color: @form-line-color;
     }
@@ -130,7 +134,7 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 698px;
+      top: 26px;
       right: 0;
       background-color: @form-line-color;
     }
@@ -140,26 +144,26 @@
     padding: 0 327px 0 327px;
 
     &::before {
-      top: 650px;
       width: 280px;
     }
 
     &::after {
-      top: 650px;
       width: 280px;
     }
   }
 }
 
 .rewiew__group--text .rewiew__title {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     &::before {
       position: absolute;
       content: "";
       height: 1px;
       width: 123px;
-      top: 915px;
-      left: 0;
+      top: 10px;
+      left: -197px;
       background-color: @form-line-color;
     }
 
@@ -168,21 +172,21 @@
       content: "";
       height: 1px;
       width: 123px;
-      top: 915px;
-      right: 0;
+      top: 10px;
+      right: -197px;
       background-color: @form-line-color;
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
-      top: 882px;
       width: 280px;
+      left: -14px;
     }
 
     &::after {
-      top: 882px;
       width: 280px;
+      right: -14px;
     }
   }
 }

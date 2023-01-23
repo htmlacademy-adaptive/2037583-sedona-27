@@ -105,25 +105,7 @@
   }
 }
 
-.main-nav__item:first-child a {
-  @media (min-width: @tablet-width) {
-    padding-left: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 90px;
-  }
-}
-
-.main-nav__item:nth-child(2n) {
-  @media (min-width: @tablet-width) {
-    padding-left: 20px;
-  }
-}
-
-.main-nav__item:last-child {
-  padding-bottom: 9px;
-
+.main-nav__item--last-item {
   ::before {
     content: "";
     position: absolute;
@@ -131,26 +113,12 @@
     width: 320px;
     height: 7px;
     left: 0;
-    top: 49px;
+    top: 48px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 
     @media (min-width: @tablet-width) {
       display: none;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-  }
-}
-
-.main-nav__item:nth-child(3n) {
-  @media (min-width: @tablet-width) {
-    margin-left: auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: auto;
   }
 }
 
@@ -179,6 +147,19 @@
   }
 }
 
+.main-nav__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
+}
+
 .main-nav--nojs .main-nav__item {
   display: block;
 }
@@ -201,7 +182,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 306px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-width: 480px;
   }
 }
 
@@ -209,8 +195,7 @@
   position: relative;
   display: block;
   text-align: center;
-  padding: 17px 20px 12px 20px;
-  padding-bottom: 13px;
+  padding: 16px 20px 13px 20px;
   color: @white-color;
   background-color: @blue-background;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -230,7 +215,6 @@
   @media (min-width: @tablet-width) {
     color: @black-color;
     background-color: @white-color;
-    padding: 18px 29px 17px 25px;
     border: none;
     box-shadow: none;
   }
@@ -238,7 +222,6 @@
   @media (min-width: @desktop-width) {
     color: @black-color;
     background-color: @white-color;
-    padding: 18px 71px 17px 71px;
     border: none;
     box-shadow: none;
   }
@@ -256,6 +239,9 @@
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {
     width: 768px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
   }
 
   @media (min-width: @desktop-width) {

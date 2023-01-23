@@ -1,18 +1,4 @@
 .catalog-container {
-  &::before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 320px;
-    bottom: -38px;
-    left: 0;
-    background-color: @disabled-color;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     padding: 81px 60px 60px 60px;
     display: flex;
